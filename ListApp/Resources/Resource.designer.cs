@@ -108,17 +108,8 @@ namespace ListApp
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f050005
-			public const int confirmButton = 2131034117;
-			
 			// aapt resource value: 0x7f050002
-			public const int imageView1 = 2131034114;
-			
-			// aapt resource value: 0x7f050003
-			public const int userEmail = 2131034115;
-			
-			// aapt resource value: 0x7f050004
-			public const int userPassword = 2131034116;
+			public const int webView = 2131034114;
 			
 			static Id()
 			{

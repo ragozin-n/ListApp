@@ -6,34 +6,27 @@ namespace ListApp.Core
 	public class LoginViewModel : MvxViewModel
 	{
 
-		private string _userLogin;
+		private string _link;
 
-		public string UserLogin
+		public string Link
 		{
-			get { return _userLogin; }
-			set { _userLogin = value; RaisePropertyChanged(() => UserLogin); }
-		}
-
-		private string _password;
-
-		public string Password
-		{
-			get { return _password; }
-			set { _password = value; RaisePropertyChanged(() => Password); }
+			get { return _link; }
+			set { _link = value; RaisePropertyChanged(() => Link); }
 		}
 
 		public override void Start()
 		{
-			UserLogin = Password = string.Empty;
+			Link = Authorization.CreateLink();
 			base.Start();
 		}
-		public void OnClick()
-		{
-			Debug.WriteLine($"{ UserLogin } - { Password }");
-			UserLogin = Password = string.Empty;
-		}
+
+		//public void OnClick()
+		//{
+		//	Debug.WriteLine($"{ UserLogin } - { Password }");
+		//	UserLogin = Password = string.Empty;
+		//}
 
 
-		public MvxCommand Confirm { get { return new MvxCommand(OnClick); } }
+		//public MvxCommand Confirm { get { return new MvxCommand(OnClick); } }
 	}
 }
