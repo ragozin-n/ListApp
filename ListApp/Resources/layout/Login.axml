@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="center">
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
+        android:src="@drawable/avatar"
         android:layout_width="match_parent"
-        android:layout_height="161.5dp"
+        android:layout_height="220.0dp"
         android:id="@+id/imageView1"
-        android:layout_marginBottom="80dp" />
+        android:layout_marginBottom="80dp"
+        android:scaleType="fitXY" />
     <EditText
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
@@ -31,5 +32,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/confirmButton"
         android:gravity="center"
-        android:onClick="Confirm" />
+        local:MvxBind="Click Confirm" />
 </LinearLayout>
