@@ -93,6 +93,23 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\Sort.axml" />
     <AndroidResource Include="Resources\layout\sort_list_item.axml" />
+    <AndroidResource Include="Resources\drawable\attention.png" />
+    <AndroidResource Include="Resources\drawable\check.png" />
+    <AndroidResource Include="Resources\drawable\close.png" />
+    <AndroidResource Include="Resources\drawable\close_dark.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\logout_button.png" />
+    <AndroidResource Include="Resources\drawable\menu.png" />
+    <AndroidResource Include="Resources\drawable\password.png" />
+    <AndroidResource Include="Resources\drawable\status.png" />
+    <AndroidResource Include="Resources\drawable\status_done.png" />
+    <AndroidResource Include="Resources\drawable\status_done_button.png" />
+    <AndroidResource Include="Resources\drawable\status_important.png" />
+    <AndroidResource Include="Resources\drawable\time.png" />
+    <AndroidResource Include="Resources\drawable\username.png" />
+    <AndroidResource Include="Resources\drawable\violet_button.png" />
+    <AndroidResource Include="Resources\drawable\important.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
   </ItemGroup>
   <ItemGroup>
