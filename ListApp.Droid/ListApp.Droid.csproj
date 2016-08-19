@@ -111,6 +111,8 @@
     <AndroidResource Include="Resources\drawable\violet_button.png" />
     <AndroidResource Include="Resources\drawable\important.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
+    <AndroidResource Include="Resources\layout\Settings.axml" />
+    <AndroidResource Include="Resources\drawable\divider.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
