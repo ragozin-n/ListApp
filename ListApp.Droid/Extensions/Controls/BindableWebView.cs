@@ -29,8 +29,6 @@ namespace ListApp
 				LoadUrl(_url);
 			}
 		}
-
-		override 
 	}
 }
 
