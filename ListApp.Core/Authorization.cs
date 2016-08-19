@@ -5,6 +5,7 @@ namespace ListApp.Core
 {
 	public class Authorization
 	{
+		public static string Token { get; set; }
 		public static string CreateLink()
 		{
 			//Без библиотек
@@ -19,9 +20,14 @@ namespace ListApp.Core
             );
 		}
 
-		public static string GetToken(string html)
+		public static bool SetToken(string html)
 		{
-			return string.Empty;
+			if (html.StartsWith("Success code="))
+			{
+				Token = html.Substring(12);
+				return true;
+			}
+			return false;
 		}
 	}
 }

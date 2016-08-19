@@ -8,7 +8,7 @@ namespace ListApp
 		public override void OnPageFinished(WebView view, string url)
 		{
 			base.OnPageFinished(view, url);
-			Core.Authorization.GetToken();
+			Core.Authorization.SetToken(view.Title);
 		}
 	}
 }
