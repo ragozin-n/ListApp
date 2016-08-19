@@ -18,6 +18,11 @@ namespace ListApp.Core
 				@"&client_id=613151680037-0i0j493f9so3ioue2hmv62bnmahm8vae.apps.googleusercontent.com"
             );
 		}
+
+		public static string GetToken(string html)
+		{
+			return string.Empty;
+		}
 	}
 }
 

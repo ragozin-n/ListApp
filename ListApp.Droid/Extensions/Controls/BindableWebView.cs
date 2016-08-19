@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.Util;
 using Android.Webkit;
+using Java.Lang;
 namespace ListApp
 {
 	public class BindableWebView : WebView
@@ -18,7 +19,7 @@ namespace ListApp
 			get { return _url; }
 			set
 			{
-				if (string.IsNullOrEmpty(value)) return;
+				if (Uri.IsWellFormedUriString(value, UriKind.RelativeOrAbsolute)) return;
 
 				_url = value;
 
@@ -26,18 +27,10 @@ namespace ListApp
 				Settings.JavaScriptEnabled = true;
 				SetWebViewClient(new WebViewClient());
 				LoadUrl(_url);
-				UpdatedHtmlContent();
 			}
 		}
 
-		public event EventHandler HtmlContentChanged;
-
-		private void UpdatedHtmlContent()
-		{
-			var handler = HtmlContentChanged;
-			if (handler != null)
-				handler(this, EventArgs.Empty);
-		}
+		override 
 	}
 }
 
