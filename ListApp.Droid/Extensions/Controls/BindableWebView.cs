@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Util;
 using Android.Webkit;
 using Java.Lang;
+using MvvmCross.Binding.Bindings.SourceSteps;
 namespace ListApp
 {
 	public class BindableWebView : WebView
@@ -25,7 +26,7 @@ namespace ListApp
 
 				Settings.SetPluginState(WebSettings.PluginState.On);
 				Settings.JavaScriptEnabled = true;
-				SetWebViewClient(new WebViewClient());
+				SetWebViewClient(new CustomWebViewCLient());
 				LoadUrl(_url);
 			}
 		}
