@@ -71,9 +71,9 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ListApp_DroidView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
+    <Compile Include="Views\CreateTaskView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -89,10 +89,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
-    <AndroidResource Include="Resources\layout\DescriptionTask.axml" />
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\Sort.axml" />
-    <AndroidResource Include="Resources\layout\sort_list_item.axml" />
     <AndroidResource Include="Resources\drawable\attention.png" />
     <AndroidResource Include="Resources\drawable\check.png" />
     <AndroidResource Include="Resources\drawable\close.png" />
@@ -111,6 +109,7 @@
     <AndroidResource Include="Resources\drawable\violet_button.png" />
     <AndroidResource Include="Resources\drawable\important.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
+    <AndroidResource Include="Resources\layout\CreateTask.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
