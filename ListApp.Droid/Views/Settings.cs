@@ -3,9 +3,10 @@ using Android.App;
 using MvvmCross.Droid.Views;
 using ListApp.Core;
 
+
 namespace ListApp
 {
-	[Activity(Theme = "@android:style/Theme.Material.Light.NoActionBar", Label = "ListApp", MainLauncher = true, HardwareAccelerated = true)]
+	[Activity(Theme = "@style/Theme.Custom", Label = "ListApp", MainLauncher = true, HardwareAccelerated = true)]
 	public class Settings : MvxActivity
 	{
 		public new SettingsViewModel ViewModel
@@ -25,7 +26,6 @@ namespace ListApp
 		{
 			SetContentView(Resource.Layout.Settings);
 		}
-
 
 	}
 }

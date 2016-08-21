@@ -26,6 +26,15 @@ namespace ListApp
 		
 		public static void UpdateIdValues()
 		{
+			global::blocke.circleimageview.Resource.Attribute.civ_border_color = global::ListApp.Resource.Attribute.civ_border_color;
+			global::blocke.circleimageview.Resource.Attribute.civ_border_overlay = global::ListApp.Resource.Attribute.civ_border_overlay;
+			global::blocke.circleimageview.Resource.Attribute.civ_border_width = global::ListApp.Resource.Attribute.civ_border_width;
+			global::blocke.circleimageview.Resource.Attribute.civ_fill_color = global::ListApp.Resource.Attribute.civ_fill_color;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView = global::ListApp.Resource.Styleable.CircleImageView;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_color = global::ListApp.Resource.Styleable.CircleImageView_civ_border_color;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_overlay = global::ListApp.Resource.Styleable.CircleImageView_civ_border_overlay;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_width = global::ListApp.Resource.Styleable.CircleImageView_civ_border_width;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_fill_color = global::ListApp.Resource.Styleable.CircleImageView_civ_fill_color;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::ListApp.Resource.Attribute.MvxBind;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::ListApp.Resource.Attribute.MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::ListApp.Resource.Attribute.MvxGroupItemTemplate;
@@ -73,6 +82,18 @@ namespace ListApp
 			// aapt resource value: 0x7f010002
 			public const int MvxTemplate = 2130771970;
 			
+			// aapt resource value: 0x7f010008
+			public const int civ_border_color = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int civ_border_overlay = 2130771977;
+			
+			// aapt resource value: 0x7f010007
+			public const int civ_border_width = 2130771975;
+			
+			// aapt resource value: 0x7f01000a
+			public const int civ_fill_color = 2130771978;
+			
 			static Attribute()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -111,43 +132,49 @@ namespace ListApp
 			public const int important = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int logo = 2130837512;
+			public const int kek = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int logout = 2130837513;
+			public const int logo = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int logout_button = 2130837514;
+			public const int logout = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int menu = 2130837515;
+			public const int logout_button = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int password = 2130837516;
+			public const int menu = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int people = 2130837517;
+			public const int password = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int status = 2130837518;
+			public const int people = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int status_done = 2130837519;
+			public const int pig = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int status_done_button = 2130837520;
+			public const int status = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int status_important = 2130837521;
+			public const int status_done = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int time = 2130837522;
+			public const int status_done_button = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int username = 2130837523;
+			public const int status_important = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int violet_button = 2130837524;
+			public const int time = 2130837524;
+			
+			// aapt resource value: 0x7f020015
+			public const int username = 2130837525;
+			
+			// aapt resource value: 0x7f020016
+			public const int violet_button = 2130837526;
 			
 			static Drawable()
 			{
@@ -353,7 +380,7 @@ namespace ListApp
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int MyTheme = 2131165184;
+			public const int Theme_Custom = 2131165184;
 			
 			static Style()
 			{
@@ -367,6 +394,24 @@ namespace ListApp
 		
 		public partial class Styleable
 		{
+			
+			public static int[] CircleImageView = new int[] {
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978};
+			
+			// aapt resource value: 1
+			public const int CircleImageView_civ_border_color = 1;
+			
+			// aapt resource value: 2
+			public const int CircleImageView_civ_border_overlay = 2;
+			
+			// aapt resource value: 0
+			public const int CircleImageView_civ_border_width = 0;
+			
+			// aapt resource value: 3
+			public const int CircleImageView_civ_fill_color = 3;
 			
 			public static int[] MvxBinding = new int[] {
 					2130771968,

@@ -5,14 +5,14 @@ using ListApp.Core;
 
 namespace ListApp
 {
-	[Activity(Theme = "@android:style/Theme.Material.Light.NoActionBar", Label = "ListApp", MainLauncher = true, HardwareAccelerated = true)]
+	[Activity(Theme = "@android:style/Theme.Material.Light.NoActionBar", Label = "ListApp", HardwareAccelerated = true)]
 	public class ListApp_DroidView : MvxActivity
 	{
-		public new SettingsViewModel ViewModel
+		public new LoginViewModel ViewModel
 		{
 			get 
 			{
-				return (SettingsViewModel)base.ViewModel; 
+				return (LoginViewModel)base.ViewModel; 
 			}
 			set 
 			{ 
@@ -23,7 +23,7 @@ namespace ListApp
 
 		protected override void OnViewModelSet()
 		{
-			SetContentView(Resource.Layout.Settings);
+			SetContentView(Resource.Layout.Login);
 		}
 
 

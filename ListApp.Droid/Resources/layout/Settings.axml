@@ -39,7 +39,7 @@
         android:background="#ffba77ff"
         android:id="@+id/relativeLayout1"
         android:layout_marginBottom="15dp">
-        <ImageView
+        <blocke.circleimageview.CircleImageView
             android:src="@drawable/avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -47,6 +47,10 @@
             android:id="@+id/Avatar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            local:civ_border_width="2dp"
+            local:civ_border_color="@android:color/black"
+            local:civ_border_overlay="true"
+            local:civ_fill_color="@android:color/black"
             local:MvxBind="Avatar" />
     <!--local:MvxBind="Text Name"-->
         <TextView
@@ -75,6 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enablePushSwitch"
+        android:theme="@style/Theme.Custom"
         android:text="Включить push-уведомления"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
