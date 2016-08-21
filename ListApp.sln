@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListApp.Droid", "ListApp\ListApp.Droid.csproj", "{D39C85AE-8286-4E00-B8A6-E9F6B70D8C8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListApp.Droid", "ListApp.Droid\ListApp.Droid.csproj", "{D39C85AE-8286-4E00-B8A6-E9F6B70D8C8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListApp.iOS", "ListApp.iOS\ListApp.iOS.csproj", "{5DADE7C9-508B-40F3-AF3F-00D585108438}"
 EndProject

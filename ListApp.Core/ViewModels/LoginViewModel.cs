@@ -1,17 +1,32 @@
 ﻿using System;
 using MvvmCross.Core.ViewModels;
+using System.Diagnostics;
 namespace ListApp.Core
 {
 	public class LoginViewModel : MvxViewModel
 	{
-		public string UserLogin { get; set; }
-		public string Password { get; set; }
+
+		private string _link;
+
+		public string Link
+		{
+			get { return _link; }
+			set { _link = value; RaisePropertyChanged(() => Link); }
+		}
 
 		public override void Start()
 		{
-			UserLogin = Password = string.Empty;
+			Link = new Authorization().CreateLink();
 			base.Start();
 		}
+
+		//public void OnClick()
+		//{
+		//	Debug.WriteLine($"{ UserLogin } - { Password }");
+		//	UserLogin = Password = string.Empty;
+		//}
+
+
+		//public MvxCommand Confirm { get { return new MvxCommand(OnClick); } }
 	}
 }
-
