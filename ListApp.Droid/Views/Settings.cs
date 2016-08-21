@@ -6,17 +6,17 @@ using ListApp.Core;
 namespace ListApp
 {
 	[Activity(Theme = "@android:style/Theme.Material.Light.NoActionBar", Label = "ListApp", MainLauncher = true, HardwareAccelerated = true)]
-	public class ListApp_DroidView : MvxActivity
+	public class Settings : MvxActivity
 	{
 		public new SettingsViewModel ViewModel
 		{
-			get 
+			get
 			{
-				return (SettingsViewModel)base.ViewModel; 
+				return (SettingsViewModel)base.ViewModel;
 			}
-			set 
-			{ 
-				base.ViewModel = value; 
+			set
+			{
+				base.ViewModel = value;
 			}
 
 		}

@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="53.5dp"
+        android:layout_height="?android:attr/actionBarSize"
         android:background="#ffba77ff">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff898989" />
         <Button
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/menu"
             android:gravity="center_vertical"
@@ -24,7 +30,8 @@
             android:id="@+id/settings"
             android:gravity="center_vertical"
             android:backgroundTint="#ff898989"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            android:textColor="#ffffffff" />
     </FrameLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -39,7 +46,9 @@
             android:layout_gravity="center"
             android:id="@+id/Avatar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            local:MvxBind="Avatar" />
+    <!--local:MvxBind="Text Name"-->
         <TextView
             android:text="Имя Фамилия"
             android:layout_width="match_parent"
@@ -49,16 +58,18 @@
             android:gravity="center"
             android:layout_marginBottom="10dp"
             android:textSize="20dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="128dp"
+            android:textColor="#ffffffff" />
         <TextView
             android:text="pochta@mail.ru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/Name"
+            android:id="@+id/Mail"
             android:gravity="center"
-            android:textSize="15dp"
-            android:layout_marginTop="155dp" />
+            android:textSize="13dp"
+            android:layout_marginTop="155dp"
+            android:textColor="#ffffffff" />
     </RelativeLayout>
     <Switch
         android:layout_width="match_parent"
@@ -67,9 +78,11 @@
         android:text="Включить push-уведомления"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="0dp"
         android:textSize="15dp"
-        android:textColor="#ff1d1d26" />
+        android:textColor="#ff1d1d26"
+        local:MvxBind="Включить push-уведомления"
+        android:buttonTint="#ffff0000" />
     <ImageView
         android:src="@drawable/divider"
         android:layout_width="match_parent"
@@ -78,17 +91,19 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/enableSyncSwitch"
-        android:text="Включить синхронизацию"
+        android:text="Включить синхронизацию с Google"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="0dp"
         android:textSize="15dp"
-        android:textColor="#ff1d1d26" />
+        android:textColor="#ff1d1d26"
+        local:MvxBind="Включить синхронизацию" />
     <ImageView
         android:src="@drawable/divider"
         android:layout_width="match_parent"
@@ -97,17 +112,19 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center|bottom"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="15dp">
         <Button
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@drawable/logout_button"
             android:gravity="center_vertical"
-            android:id="@+id/logoutButton" />
+            android:id="@+id/logoutButton"
+            local:MvxBind="Logout button" />
     </RelativeLayout>
 </LinearLayout>

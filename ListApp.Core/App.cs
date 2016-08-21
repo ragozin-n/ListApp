@@ -7,7 +7,7 @@ namespace ListApp.Core
 	{
 		public App()
 		{
-			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
+			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<SettingsViewModel>());
 		}
 	}
 }
