@@ -16,7 +16,7 @@ namespace ListApp.Core
 
 		public override void Start()
 		{
-			Link = Authorization.CreateLink();
+			Link = new Authorization().CreateLink();
 			base.Start();
 		}
 

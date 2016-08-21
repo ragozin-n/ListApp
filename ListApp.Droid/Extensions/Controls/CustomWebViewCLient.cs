@@ -2,6 +2,11 @@
 using Android.Webkit;
 using System.Net;
 using MvvmCross.Platform;
+using Mono.Security.Interface;
+using Android.App;
+using System.Threading;
+using ListApp.Core;
+using MvvmCross.Core.ViewModels;
 namespace ListApp
 {
 	public class CustomWebViewCLient : WebViewClient
@@ -9,8 +14,7 @@ namespace ListApp
 		public override void OnPageFinished(WebView view, string url)
 		{
 			base.OnPageFinished(view, url);
-			//TODO перенести в сервис
-			Core.Authorization.SetToken(view.Title);
+			new Core.Authorization().SetToken(view.Title);
 		}
 	}
 }
