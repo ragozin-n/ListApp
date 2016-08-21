@@ -22,6 +22,8 @@ namespace ListApp.iOS
 			var uri = new Uri(Authorization.CreateLink());
 			var nsurl = new NSUrl(uri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
 			LoginWebView.LoadRequest(new NSUrlRequest(nsurl));
+
+			// Открываем новую вью в обработчике
 			LoginWebView.LoadFinished += (sender, e) => Authorization.SetToken(LoginWebView.EvaluateJavascript("document.title"));
 		}
 			
