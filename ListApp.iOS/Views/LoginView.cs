@@ -4,6 +4,7 @@ using UIKit;
 using MvvmCross.iOS.Views;
 using ListApp.Core;
 using Foundation;
+using System.Diagnostics;
 
 namespace ListApp.iOS
 {
@@ -17,10 +18,13 @@ namespace ListApp.iOS
 		{
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
-			LoginWebView.LoadRequest(new NSUrlRequest(new NSUrl(Authorization.CreateLink())));
 
+			var uri = new Uri(Authorization.CreateLink());
+			var nsurl = new NSUrl(uri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
+			LoginWebView.LoadRequest(new NSUrlRequest(nsurl));
+			LoginWebView.LoadFinished += (sender, e) => Authorization.SetToken(LoginWebView.EvaluateJavascript("document.title"));
 		}
-
+			
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();

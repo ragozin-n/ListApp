@@ -92,7 +92,6 @@
     <AndroidResource Include="Resources\layout\DescriptionTask.axml" />
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\Sort.axml" />
-    <AndroidResource Include="Resources\layout\sort_list_item.axml" />
     <AndroidResource Include="Resources\drawable\attention.png" />
     <AndroidResource Include="Resources\drawable\check.png" />
     <AndroidResource Include="Resources\drawable\close.png" />
