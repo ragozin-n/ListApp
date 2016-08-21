@@ -1,8 +1,7 @@
-﻿using System;
-using ListApp.Core;
-using MvvmCross.Core.ViewModels;
-using MvvmCross.iOS.Platform;
+﻿using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
+using MvvmCross.Core.ViewModels;
+using ListApp.Core;
 
 namespace ListApp.iOS
 {
