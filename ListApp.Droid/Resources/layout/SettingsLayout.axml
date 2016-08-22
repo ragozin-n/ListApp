@@ -15,79 +15,73 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#ff898989" />
         <Button
+            android:id="@+id/MenuButton"
             android:layout_width="20dp"
             android:layout_height="18dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/menu"
             android:gravity="center_vertical"
-            android:id="@+id/MenuButton"
-            android:layout_marginLeft="20dp" />
+            android:layout_marginLeft="20dp"
+            local:MvxBind="Click ReturnCommand" />
         <TextView
             android:text="Настройки"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:id="@+id/settings"
             android:gravity="center_vertical"
             android:backgroundTint="#ff898989"
             android:textSize="18dp"
             android:textColor="#ffffffff" />
     </FrameLayout>
     <RelativeLayout
+        android:id="@+id/UserInfo"
         android:layout_width="wrap_content"
         android:layout_height="190dp"
         android:background="#ffba77ff"
-        android:id="@+id/relativeLayout1"
         android:layout_marginBottom="15dp">
         <blocke.circleimageview.CircleImageView
+            android:id="@+id/Avatar"
             android:src="@drawable/avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:id="@+id/Avatar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             local:civ_border_width="2dp"
-            local:civ_border_color="@android:color/black"
             local:civ_border_overlay="true"
-            local:civ_fill_color="@android:color/black"
-            local:MvxBind="Avatar" />
-    <!--local:MvxBind="Text Name"-->
+            local:MvxBind="" />
         <TextView
-            android:text="Имя Фамилия"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:id="@+id/Name"
-            android:gravity="center"
-            android:layout_marginBottom="10dp"
-            android:textSize="20dp"
-            android:layout_marginTop="128dp"
-            android:textColor="#ffffffff" />
-        <TextView
-            android:text="pochta@mail.ru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/Mail"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="128dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            local:MvxBind="Text FullName" />
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="155dp"
             android:gravity="center"
             android:textSize="13dp"
-            android:layout_marginTop="155dp"
-            android:textColor="#ffffffff" />
+            android:textColor="#ffffffff"
+            local:MvxBind="Text EmailAddress" />
     </RelativeLayout>
     <Switch
+        android:id="@+id/enablePushSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/enablePushSwitch"
-        android:theme="@style/Theme.Custom"
-        android:text="Включить push-уведомления"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="0dp"
+        android:text="Push-уведомления"
         android:textSize="15dp"
         android:textColor="#ff1d1d26"
-        local:MvxBind="Включить push-уведомления"
-        android:buttonTint="#ffff0000" />
+        local:MvxBind="Checked IsPushEnabled" />
     <ImageView
         android:src="@drawable/divider"
         android:layout_width="match_parent"
@@ -99,16 +93,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
     <Switch
+        android:id="@+id/enableSyncSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/enableSyncSwitch"
-        android:text="Включить синхронизацию с Google"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="0dp"
+        android:text="Синхронизация с Google"
         android:textSize="15dp"
         android:textColor="#ff1d1d26"
-        local:MvxBind="Включить синхронизацию" />
+        local:MvxBind="Checked IsSyncEnabled" />
     <ImageView
         android:src="@drawable/divider"
         android:layout_width="match_parent"
@@ -130,6 +123,6 @@
             android:background="@drawable/logout_button"
             android:gravity="center_vertical"
             android:id="@+id/logoutButton"
-            local:MvxBind="Logout button" />
+            local:MvxBind="Click LogoutCommand" />
     </RelativeLayout>
 </LinearLayout>

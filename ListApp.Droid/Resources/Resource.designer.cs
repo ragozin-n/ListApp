@@ -186,14 +186,17 @@ namespace ListApp
 			// aapt resource value: 0x7f050005
 			public const int ApliedButton = 2131034117;
 			
-			// aapt resource value: 0x7f05001c
-			public const int Avatar = 2131034140;
+			// aapt resource value: 0x7f05001b
+			public const int Avatar = 2131034139;
 			
 			// aapt resource value: 0x7f050003
 			public const int CancelButton = 2131034115;
 			
 			// aapt resource value: 0x7f050006
 			public const int DataLayout = 2131034118;
+			
+			// aapt resource value: 0x7f05001d
+			public const int Email = 2131034141;
 			
 			// aapt resource value: 0x7f050002
 			public const int HeadLayout = 2131034114;
@@ -204,11 +207,8 @@ namespace ListApp
 			// aapt resource value: 0x7f050010
 			public const int IsProorityTaskRow = 2131034128;
 			
-			// aapt resource value: 0x7f050022
-			public const int ListView = 2131034146;
-			
-			// aapt resource value: 0x7f05001e
-			public const int Mail = 2131034142;
+			// aapt resource value: 0x7f050021
+			public const int ListView = 2131034145;
 			
 			// aapt resource value: 0x7f050019
 			public const int MenuButton = 2131034137;
@@ -219,8 +219,8 @@ namespace ListApp
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f05001d
-			public const int Name = 2131034141;
+			// aapt resource value: 0x7f05001c
+			public const int Name = 2131034140;
 			
 			// aapt resource value: 0x7f050013
 			public const int RecallForRow = 2131034131;
@@ -230,6 +230,9 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f05000a
 			public const int SelectTimeRow = 2131034122;
+			
+			// aapt resource value: 0x7f05001a
+			public const int UserInfo = 2131034138;
 			
 			// aapt resource value: 0x7f050012
 			public const int checkBox1 = 2131034130;
@@ -246,29 +249,23 @@ namespace ListApp
 			// aapt resource value: 0x7f050009
 			public const int editText3 = 2131034121;
 			
+			// aapt resource value: 0x7f05001e
+			public const int enablePushSwitch = 2131034142;
+			
 			// aapt resource value: 0x7f05001f
-			public const int enablePushSwitch = 2131034143;
+			public const int enableSyncSwitch = 2131034143;
+			
+			// aapt resource value: 0x7f050022
+			public const int img = 2131034146;
 			
 			// aapt resource value: 0x7f050020
-			public const int enableSyncSwitch = 2131034144;
-			
-			// aapt resource value: 0x7f050023
-			public const int img = 2131034147;
-			
-			// aapt resource value: 0x7f050021
-			public const int logoutButton = 2131034145;
+			public const int logoutButton = 2131034144;
 			
 			// aapt resource value: 0x7f050017
 			public const int myButton = 2131034135;
 			
-			// aapt resource value: 0x7f050024
-			public const int name = 2131034148;
-			
-			// aapt resource value: 0x7f05001b
-			public const int relativeLayout1 = 2131034139;
-			
-			// aapt resource value: 0x7f05001a
-			public const int settings = 2131034138;
+			// aapt resource value: 0x7f050023
+			public const int name = 2131034147;
 			
 			// aapt resource value: 0x7f050004
 			public const int textView1 = 2131034116;
@@ -317,7 +314,7 @@ namespace ListApp
 			public const int Main = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int Settings = 2130968579;
+			public const int SettingsLayout = 2130968579;
 			
 			// aapt resource value: 0x7f040004
 			public const int Sort = 2130968580;
