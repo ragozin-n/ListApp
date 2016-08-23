@@ -20,8 +20,6 @@ namespace ListApp
 			get { return _url; }
 			set
 			{
-				if (Uri.IsWellFormedUriString(value, UriKind.RelativeOrAbsolute)) return;
-
 				_url = value;
 
 				Settings.SetPluginState(WebSettings.PluginState.On);
