@@ -1,6 +1,8 @@
 ﻿using System;
 using MvvmCross.Core.ViewModels;
 using System.Diagnostics;
+using MvvmCross.Platform;
+
 namespace ListApp.Core
 {
 	public class LoginViewModel : MvxViewModel
@@ -16,10 +18,19 @@ namespace ListApp.Core
 
 		public override void Start()
 		{
-			Link = new Authorization().CreateLink();
+			var service = Mvx.Resolve<IAuthorization>();
+			Link = service.CreateLink();
+			service.TokenAlive += OnTokenAlive;
 			base.Start();
 		}
 
+		private void OnTokenAlive(object sender, EventArgs e)
+		{
+			((IAuthorization)sender).TokenAlive -= OnTokenAlive;
+			ShowViewModel<TaskListViewModel>();
+		}
+
+		 
 		//public void OnClick()
 		//{
 		//	Debug.WriteLine($"{ UserLogin } - { Password }");

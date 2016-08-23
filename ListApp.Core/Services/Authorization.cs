@@ -5,16 +5,15 @@ namespace ListApp.Core
 {
 	public class Authorization : IAuthorization
 	{
-		public static string Token { get; set; }
+		public string Token { get; set; }
 
-		public bool SetToken(string html)
+		public void SetToken(string html)
 		{
 			if (html.StartsWith("Success code=", StringComparison.CurrentCulture))
 			{
 				Token = html.Substring(12);
-				return true;
+				TokenAlive?.Invoke(this, new EventArgs());
 			}
-			return false;
 		}
 
 		public string CreateLink()
@@ -27,6 +26,8 @@ namespace ListApp.Core
 				@"&response_type=code" +
 				@"&client_id=613151680037-0i0j493f9so3ioue2hmv62bnmahm8vae.apps.googleusercontent.com");
 		}
+
+		public event EventHandler TokenAlive;
 	}
 }
 
