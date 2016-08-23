@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -74,12 +74,19 @@
     <Compile Include="Views\ListApp_DroidView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
+    <Compile Include="Views\TaskList_DroidView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
+    <AndroidResource Include="Resources\layout\TemplateItemTaskView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TaskList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -111,12 +118,7 @@
     <AndroidResource Include="Resources\drawable\important.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-    <Folder Include="Views\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Extensions\Controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ListApp.Core\ListApp.Core.csproj">
       <Project>{46C6B07F-339A-4D41-96A5-8031E6D3DDA0}</Project>
