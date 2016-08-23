@@ -11,8 +11,8 @@ namespace ListApp.Core
         {
             IsSyncEnabled = true;
             IsPushEnabled = true;
-            FirstName = "Чубакка";
-            LastName = "Николаевич";
+            FirstName = "Дед";
+            LastName = "Егор";
             EmailAddress = "getitfrom@google.com";
             FullName = FirstName + " " + LastName;
             //PhotoUrl = "https://pp.vk.me/c631520/v631520910/3980f/ZIsBW-xlt34.jpg"
