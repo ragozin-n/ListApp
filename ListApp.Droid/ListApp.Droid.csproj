@@ -74,8 +74,8 @@
     <Compile Include="Views\ListApp_DroidView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
+    <Compile Include="Views\Sort_DroidView.cs" />
     <Compile Include="Views\TaskList_DroidView.cs" />
-    <Compile Include="Views\CreateTaskView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -88,7 +88,6 @@
     <AndroidResource Include="Resources\layout\TaskList.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CreateTask.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -120,12 +119,17 @@
     <AndroidResource Include="Resources\drawable\important.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\clock.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ListApp.Core\ListApp.Core.csproj">
       <Project>{46C6B07F-339A-4D41-96A5-8031E6D3DDA0}</Project>
       <Name>ListApp.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\people.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

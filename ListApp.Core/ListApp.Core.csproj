@@ -38,8 +38,8 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="Services\Authorization.cs" />
     <Compile Include="Services\IAuthorization.cs" />
+    <Compile Include="ViewModels\SortViewModel.cs" />
     <Compile Include="ViewModels\TaskListViewModel.cs" />
-    <Compile Include="ViewModels\CreateTaskViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Threading.Tasks">
