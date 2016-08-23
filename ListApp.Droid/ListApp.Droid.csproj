@@ -75,6 +75,7 @@
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
     <Compile Include="Views\TaskList_DroidView.cs" />
+    <Compile Include="Views\CreateTaskView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -87,6 +88,7 @@
     <AndroidResource Include="Resources\layout\TaskList.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\CreateTask.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
