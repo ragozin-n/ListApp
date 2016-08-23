@@ -13,7 +13,9 @@ namespace ListApp.Core
 		/// Parse token from page's tittle and save it.
 		/// </summary>
 		/// <returns>Token's availability.</returns>
-		bool SetToken(string html);
+		void SetToken(string html);
+
+		event EventHandler TokenAlive;
 	}
 }
 

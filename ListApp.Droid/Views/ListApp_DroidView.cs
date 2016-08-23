@@ -5,7 +5,7 @@ using ListApp.Core;
 
 namespace ListApp
 {
-	[Activity(Theme = "@android:style/Theme.Material.Light", Label = "ListApp"/*, MainLauncher = true*/)]
+	[Activity(Theme = "@android:style/Theme.Material.Light", Label = "ListApp", MainLauncher = true)]
 	public class ListApp_DroidView : MvxActivity
 	{
 		public new LoginViewModel ViewModel

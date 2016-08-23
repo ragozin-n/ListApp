@@ -24,5 +24,10 @@ namespace ListApp.Core
             listItems.Add(new ItemTaskViewModel("Я", new DateTime(2016, 08, 26)));
             listItems.Add(new ItemTaskViewModel("Сделяль!", new DateTime(2016, 08, 26)));
         }
+
+		public override void Start()
+		{
+			base.Start();
+		}
     }
 }

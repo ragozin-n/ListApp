@@ -15,7 +15,7 @@ using ListApp.Core;
 
 namespace ListApp.Views
 {
-    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "Список задач", MainLauncher = true)]
+    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "@string/app_name")]
     public class TaskList_DroidView : MvxActivity
     {
         private ListView taskList;
