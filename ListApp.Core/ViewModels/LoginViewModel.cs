@@ -2,6 +2,7 @@
 using MvvmCross.Core.ViewModels;
 using System.Diagnostics;
 using MvvmCross.Platform;
+using MvvmCross.Platform.IoC;
 
 namespace ListApp.Core
 {
@@ -9,6 +10,9 @@ namespace ListApp.Core
 	{
 
 		private string _link;
+
+		[MvxInject]
+		public IAuthorization Authorization { get; set; }
 
 		public string Link
 		{
@@ -18,15 +22,15 @@ namespace ListApp.Core
 
 		public override void Start()
 		{
-			var service = Mvx.Resolve<IAuthorization>();
-			Link = service.CreateLink();
-			service.TokenAlive += OnTokenAlive;
+			Link = Authorization.CreateLink();
+			Authorization.TokenAlive += OnTokenAlive;
 			base.Start();
 		}
 
 		private void OnTokenAlive(object sender, EventArgs e)
 		{
-			((IAuthorization)sender).TokenAlive -= OnTokenAlive;
+			Authorization.TokenAlive -= OnTokenAlive;
+			Close(this);
 			ShowViewModel<TaskListViewModel>();
 		}
 

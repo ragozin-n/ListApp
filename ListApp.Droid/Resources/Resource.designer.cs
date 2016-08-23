@@ -47,31 +47,52 @@ namespace ListApp
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::ListApp.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::ListApp.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::ListApp.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::blocke.circleimageview.Resource.Attribute.civ_border_color = global::ListApp.Resource.Attribute.civ_border_color;
+			global::blocke.circleimageview.Resource.Attribute.civ_border_overlay = global::ListApp.Resource.Attribute.civ_border_overlay;
+			global::blocke.circleimageview.Resource.Attribute.civ_border_width = global::ListApp.Resource.Attribute.civ_border_width;
+			global::blocke.circleimageview.Resource.Attribute.civ_fill_color = global::ListApp.Resource.Attribute.civ_fill_color;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView = global::ListApp.Resource.Styleable.CircleImageView;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_color = global::ListApp.Resource.Styleable.CircleImageView_civ_border_color;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_overlay = global::ListApp.Resource.Styleable.CircleImageView_civ_border_overlay;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_border_width = global::ListApp.Resource.Styleable.CircleImageView_civ_border_width;
+			global::blocke.circleimageview.Resource.Styleable.CircleImageView_civ_fill_color = global::ListApp.Resource.Styleable.CircleImageView_civ_fill_color;
 		}
 		
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010000
-			public const int MvxBind = 2130771968;
-			
 			// aapt resource value: 0x7f010004
-			public const int MvxDropDownItemTemplate = 2130771972;
+			public const int MvxBind = 2130771972;
+			
+			// aapt resource value: 0x7f010008
+			public const int MvxDropDownItemTemplate = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int MvxGroupItemTemplate = 2130771977;
+			
+			// aapt resource value: 0x7f010007
+			public const int MvxItemTemplate = 2130771975;
 			
 			// aapt resource value: 0x7f010005
-			public const int MvxGroupItemTemplate = 2130771973;
+			public const int MvxLang = 2130771973;
 			
-			// aapt resource value: 0x7f010003
-			public const int MvxItemTemplate = 2130771971;
-			
-			// aapt resource value: 0x7f010001
-			public const int MvxLang = 2130771969;
+			// aapt resource value: 0x7f01000a
+			public const int MvxSource = 2130771978;
 			
 			// aapt resource value: 0x7f010006
-			public const int MvxSource = 2130771974;
+			public const int MvxTemplate = 2130771974;
+			
+			// aapt resource value: 0x7f010001
+			public const int civ_border_color = 2130771969;
 			
 			// aapt resource value: 0x7f010002
-			public const int MvxTemplate = 2130771970;
+			public const int civ_border_overlay = 2130771970;
+			
+			// aapt resource value: 0x7f010000
+			public const int civ_border_width = 2130771968;
+			
+			// aapt resource value: 0x7f010003
+			public const int civ_fill_color = 2130771971;
 			
 			static Attribute()
 			{
@@ -367,10 +388,29 @@ namespace ListApp
 		public partial class Styleable
 		{
 			
-			public static int[] MvxBinding = new int[]
+			public static int[] CircleImageView = new int[]
 			{
 					2130771968,
-					2130771969};
+					2130771969,
+					2130771970,
+					2130771971};
+			
+			// aapt resource value: 1
+			public const int CircleImageView_civ_border_color = 1;
+			
+			// aapt resource value: 2
+			public const int CircleImageView_civ_border_overlay = 2;
+			
+			// aapt resource value: 0
+			public const int CircleImageView_civ_border_width = 0;
+			
+			// aapt resource value: 3
+			public const int CircleImageView_civ_fill_color = 3;
+			
+			public static int[] MvxBinding = new int[]
+			{
+					2130771972,
+					2130771973};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -380,29 +420,29 @@ namespace ListApp
 			
 			public static int[] MvxControl = new int[]
 			{
-					2130771970};
+					2130771974};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[]
 			{
-					2130771973};
+					2130771977};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[]
 			{
-					2130771974};
+					2130771978};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[]
 			{
-					2130771971,
-					2130771972};
+					2130771975,
+					2130771976};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
