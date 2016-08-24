@@ -11,10 +11,8 @@ namespace ListApp.Core
         {
             IsSyncEnabled = true;
             IsPushEnabled = true;
-            FirstName = "Дед";
-            LastName = "Егор";
             EmailAddress = "getitfrom@google.com";
-            FullName = FirstName + " " + LastName;
+            FullName = "Тетя Паша";
             //PhotoUrl = "https://pp.vk.me/c631520/v631520910/3980f/ZIsBW-xlt34.jpg"
         }
 
@@ -49,33 +47,11 @@ namespace ListApp.Core
             set { _emailAddress = value; RaisePropertyChanged(() => EmailAddress); }
         }
 
-        private string _firstName;
-        public string FirstName
-        {
-            get { return _firstName; }
-            set
-            {
-                _firstName = value;
-                RaisePropertyChanged(() => FirstName);
-            }
-        }
-
         private string _fullName;
         public string FullName
         {
             get { return _fullName; }
             set { _fullName = value; RaisePropertyChanged(() => FullName); }
-        }
-
-        private string _lastName;
-        public string LastName
-        {
-            get { return _lastName; }
-            set
-            {
-                _lastName = value;
-                RaisePropertyChanged(() => LastName);
-            }
         }
 
         private string _photoUrl;
