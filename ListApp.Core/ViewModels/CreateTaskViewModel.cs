@@ -84,11 +84,13 @@ namespace ListApp.Core.ViewModels
 
 		public void Cancel()
 		{
+			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
 			Close(this);
 		}
 
 		public void Aplyied()
 		{
+			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
 			Close(this);
 		}
 	}

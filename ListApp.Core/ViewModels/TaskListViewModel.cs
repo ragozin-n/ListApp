@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using MvvmCross.Core.ViewModels;
+using ListApp;
 
 
 
@@ -16,6 +17,7 @@ namespace ListApp.Core
 
         public void AddItems()
         {
+			listItems = TaskСontainer.AllTask.Select(arg => new ItemTaskViewModel(arg.Desc, DateTime.Parse(arg.time))).ToList();
             listItems.Add(new ItemTaskViewModel("Доделать", new DateTime(2016, 08, 22)));
             listItems.Add(new ItemTaskViewModel("Эту", new DateTime(2016, 08, 23)));
             listItems.Add(new ItemTaskViewModel("Ебучую", new DateTime(2016, 08, 24)));
