@@ -111,7 +111,6 @@ namespace ListApp.Core.ViewModels
 
 		public void Cancel()
 		{
-			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
 			Close(this);
 		}
 
@@ -131,6 +130,7 @@ namespace ListApp.Core.ViewModels
 				TaskObject.RecallForTime = RecallForTime;
 			}
 			Close(this);
+			TaskСontainer.ResetVisible();
 		}
 	}
 }

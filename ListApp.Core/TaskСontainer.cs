@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace ListApp.Core
@@ -7,6 +8,8 @@ namespace ListApp.Core
 	public class TaskСontainer
 	{
 		public TaskСontainer() { }
+		public static TaskListViewModel ListObject;
+
 
 		private static List<Task> _allTask = new List<Task>();
 		public static List<Task> AllTask { get { return _allTask; } }
@@ -17,9 +20,16 @@ namespace ListApp.Core
 		private delegate void CurrentSort();
 		private static CurrentSort _currentSort = SortByDate;
 
+		public static void ResetVisible()
+		{
+			_currentSort();
+			ListObject.ListItems = new ObservableCollection<ItemTaskViewModel>(TaskСontainer.AllTask.Select(arg => new ItemTaskViewModel(arg.Description, arg.TaskDate, 0))); ;
+		}
+
 		public static void AddTask(Task task)
 		{
 			_allTask.Add(task);
+			_currentSort();
 		}
 		/// <summary>
 		/// Возвращает элемент по иднексу и удаляет его

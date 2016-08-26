@@ -26,15 +26,13 @@ namespace ListApp.Core
 			}
 		}
 
-		public TaskListViewModel()
-		{
-			TaskСontainer.AddTask(new Task(false, true, "one", "10:02", new DateTime(10, 10, 10).ToString("D"), "10:00"));
-			_listItems = new ObservableCollection<ItemTaskViewModel>(TaskСontainer.AllTask.Select(arg => new ItemTaskViewModel(arg.Description, DateTime.Parse(arg.TaskDate), 0)));
-		}
-
 		public override void Start()
 		{
+			TaskСontainer.AddTask(new Task(false, true, "one", "10:02", new DateTime(10, 10, 10).ToString("D"), "10:00"));
+			_listItems = new ObservableCollection<ItemTaskViewModel>(TaskСontainer.AllTask.Select(arg => new ItemTaskViewModel(arg.Description, arg.TaskDate, 0)));
+			TaskСontainer.ListObject = this;
 			base.Start();
 		}
+
 	}
 }

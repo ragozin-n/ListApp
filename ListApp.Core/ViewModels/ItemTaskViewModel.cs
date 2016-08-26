@@ -13,27 +13,27 @@ namespace ListApp.Core
     public class ItemTaskViewModel : MvxViewModel
     {
         private string _nameTask;
-        private DateTime _dateTask;
+		private string _dateTask;
 		private int _indexItem;
 
         public string NameTask
         {
             get { return _nameTask; }
-            set { _nameTask = value; }
+			set { _nameTask = value; RaisePropertyChanged(() => NameTask);}
         }
-        public DateTime DateTask
+		public string DateTask
         {
             get { return _dateTask; }
-            set { _dateTask = value; }
+			set { _dateTask = value; RaisePropertyChanged(() => DateTask);}
         }
 
 		public int IndexItem
 		{
 			get { return _indexItem; }
-			set { _indexItem = value; }
+			set { _indexItem = value;}
 		}
 
-        public ItemTaskViewModel(string name, DateTime date, int indexItem)
+		public ItemTaskViewModel(string name, string date, int indexItem)
         {
             this.NameTask = name;
             this.DateTask = date;
