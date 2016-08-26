@@ -9,8 +9,12 @@ namespace ListApp.Core
 	{
 		public App()
 		{
+<<<<<<< HEAD
+			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<SettingsViewModel>());
+=======
 			Mvx.RegisterSingleton<IAuthorization>(new Authorization());
 			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
+>>>>>>> master
 		}
 	}
 }
