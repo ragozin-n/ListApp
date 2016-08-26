@@ -204,8 +204,8 @@ namespace ListApp
 			// aapt resource value: 0x7f05000f
 			public const int IsPropertyTaskSwith = 2131034127;
 			
-			// aapt resource value: 0x7f050014
-			public const int ListView = 2131034132;
+			// aapt resource value: 0x7f050019
+			public const int ListView = 2131034137;
 			
 			// aapt resource value: 0x7f050000
 			public const int MvvmCrossTagId = 2131034112;
@@ -231,29 +231,29 @@ namespace ListApp
 			// aapt resource value: 0x7f05000b
 			public const int SelectTimeButton = 2131034123;
 			
-			// aapt resource value: 0x7f050015
-			public const int TaskList = 2131034133;
-			
-			// aapt resource value: 0x7f050017
-			public const int conditionTask = 2131034135;
-			
 			// aapt resource value: 0x7f05001a
-			public const int dateTask = 2131034138;
-			
-			// aapt resource value: 0x7f050016
-			public const int linearLayout1 = 2131034134;
-			
-			// aapt resource value: 0x7f050018
-			public const int linearLayout2 = 2131034136;
+			public const int TaskList = 2131034138;
 			
 			// aapt resource value: 0x7f050013
-			public const int myButton = 2131034131;
+			public const int conditionTask = 2131034131;
 			
-			// aapt resource value: 0x7f050019
-			public const int nameTask = 2131034137;
+			// aapt resource value: 0x7f050016
+			public const int dateTask = 2131034134;
 			
 			// aapt resource value: 0x7f050012
-			public const int webView = 2131034130;
+			public const int linearLayout1 = 2131034130;
+			
+			// aapt resource value: 0x7f050014
+			public const int linearLayout2 = 2131034132;
+			
+			// aapt resource value: 0x7f050018
+			public const int myButton = 2131034136;
+			
+			// aapt resource value: 0x7f050015
+			public const int nameTask = 2131034133;
+			
+			// aapt resource value: 0x7f050017
+			public const int webView = 2131034135;
 			
 			static Id()
 			{
@@ -272,19 +272,19 @@ namespace ListApp
 			public const int CreateTask = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int Login = 2130968577;
+			public const int ItemTask = 2130968577;
 			
 			// aapt resource value: 0x7f040002
-			public const int Main = 2130968578;
+			public const int Login = 2130968578;
 			
 			// aapt resource value: 0x7f040003
-			public const int Sort = 2130968579;
+			public const int Main = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int TaskList = 2130968580;
+			public const int Sort = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int TemplateItemTaskView = 2130968581;
+			public const int TaskList = 2130968581;
 			
 			static Layout()
 			{

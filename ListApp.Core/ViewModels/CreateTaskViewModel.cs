@@ -13,19 +13,46 @@ namespace ListApp.Core.ViewModels
 		private string _description;
 		private IMvxCommand _cancel;
 		private IMvxCommand _aplyied;
+		private int _index = -1;
+		private Task _taskObject;
 
-		public CreateTaskViewModel()
+		public int Index
 		{
-			var timeNow = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, 0).ToString("g");
-			TaskTime = timeNow.Remove(timeNow.Length - 3, 3);
-			var timeOneHour = new TimeSpan(1, 0, 0).ToString("g");
-			RecallForTime = timeOneHour.Remove(timeOneHour.Length - 3, 3);
-			TaskDate = DateTime.Now.ToString("D");
-			Description = "Новая задача";
+			get { return _index; }
+			set { _index = value; }
 		}
 
-		//public CreateTaskViewModel(
+		public Task TaskObject
+		{
+			get{return _taskObject;}
+			set{_taskObject = value;}
+		}
 
+		//передается инт потому что 
+		public void Init(int task)
+		{
+			if (task == -1)
+			{
+				var timeNow = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, 0).ToString("g");
+				TaskTime = timeNow.Remove(timeNow.Length - 3, 3);
+				var timeOneHour = new TimeSpan(1, 0, 0).ToString("g");
+				RecallForTime = timeOneHour.Remove(timeOneHour.Length - 3, 3);
+				TaskDate = DateTime.Now.ToString("D");
+				Description = "Новая задача";
+			}
+			else
+			{
+				TaskObject = TaskСontainer.AllTask[task];
+				IsAllDay = TaskObject.IsAllDay;
+				IsPriority = TaskObject.ISPriority;
+				TaskTime = TaskObject.TaskTime;
+				TaskDate = TaskObject.TaskDate;
+				RecallForTime = TaskObject.RecallForTime;
+				Description = TaskObject.Description;
+			}
+		}
+
+		public CreateTaskViewModel() { }
 
 		public string Description
 		{
@@ -90,7 +117,19 @@ namespace ListApp.Core.ViewModels
 
 		public void Aplyied()
 		{
-			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
+			if (TaskObject == null)
+			{
+				TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
+			}
+			else
+			{
+				TaskObject.ISPriority = IsPriority;
+				TaskObject.IsAllDay = IsAllDay;
+				TaskObject.Description = Description;
+				TaskObject.TaskTime = TaskTime;
+				TaskObject.TaskDate = TaskDate;
+				TaskObject.RecallForTime = RecallForTime;
+			}
 			Close(this);
 		}
 	}

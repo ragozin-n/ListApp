@@ -25,12 +25,12 @@ namespace ListApp.Core
 			_recallForTime = recallForTime;
 		}
 
-		public bool IsAllDay { get { return _isAllDay; }}
-		public bool ISPriority { get { return _isAllDay; }}
-		public string TaskTime { get { return _taskTime; } }
-		public string TaskDate { get { return _taskDate; } }
-		public string Description { get { return _description; } }
-		public string RecallForTime { get { return _recallForTime; } }
+		public bool IsAllDay { get { return _isAllDay; } set { _isAllDay = value; } }
+		public bool ISPriority { get { return _isPriority; } set { _isPriority = value; } }
+		public string TaskTime { get { return _taskTime; } set { _taskTime = value; } }
+		public string TaskDate { get { return _taskDate; } set { _taskDate = value; } }
+		public string Description { get { return _description; } set { _description = value; } }
+		public string RecallForTime { get { return _recallForTime; } set { _recallForTime = value; } }
 	}
 }
 
