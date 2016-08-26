@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+
 namespace ListApp.Core
 {
 	public interface IAuthorization
@@ -13,9 +15,11 @@ namespace ListApp.Core
 		/// Parse token from page's tittle and save it.
 		/// </summary>
 		/// <returns>Token's availability.</returns>
-		void SetToken(string html);
+		Task SetToken(string html);
 
 		event EventHandler TokenAlive;
+
+		string GetUserInfo();
 	}
 }
 

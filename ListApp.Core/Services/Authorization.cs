@@ -1,19 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 //using Google.Apis.Auth.OAuth2;
 
 namespace ListApp.Core
 {
 	public class Authorization : IAuthorization
 	{
-		public string Token { get; set; }
+		public string Code { get; set; }
 
-		public void SetToken(string html)
+		public TokenJson Token { get; set; }
+
+		public async Task SetToken(string html)
 		{
 			if (html.StartsWith("Success code=", StringComparison.CurrentCulture))
 			{
-				Token = html.Substring(12);
+				Code = html.Substring(13);
+				await ConvertCodeToToken();
 				TokenAlive?.Invoke(this, new EventArgs());
 			}
 		}
@@ -31,13 +37,13 @@ namespace ListApp.Core
 
 		public event EventHandler TokenAlive;
 
-		private async void ConvertCodeToToken()
+		private async Task ConvertCodeToToken()
 		{
 			using (var client = new HttpClient())
 			{
 				var values = new Dictionary<string, string>
 				{
-				   {"code", Token},
+				   {"code", Code},
 					{"client_id", "613151680037-0i0j493f9so3ioue2hmv62bnmahm8vae.apps.googleusercontent.com"},
 					{"client_secret", "6FNxQ_r7CoE7pkPqLMcriNMm"},
 					{"redirect_uri", "urn:ietf:wg:oauth:2.0:oob:auto"},
@@ -47,10 +53,22 @@ namespace ListApp.Core
 				var content = new FormUrlEncodedContent(values);
 
 				var response = await client.PostAsync("https://www.googleapis.com/oauth2/v4/token", content);
-
 				var responseString = await response.Content.ReadAsStringAsync();
 				//TODO: Распарсить json
+				Token = TokenJson.Deserialize(responseString);
 			}
+		}
+
+		public async Task<string> GetUserInfo()
+		{
+			using (var client = new HttpClient())
+			{
+				var responce = await client.GetAsync($"https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token={Token.AccessToken}");
+				var responceString = await responce.Content.ReadAsStreamAsync();
+
+			}
+			//var result = $"https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token={Token.AccessToken}";
+			//return result;
 		}
 	}
 }

@@ -30,8 +30,10 @@ namespace ListApp.Core
 		private void OnTokenAlive(object sender, EventArgs e)
 		{
 			Authorization.TokenAlive -= OnTokenAlive;
-			Close(this);
-			ShowViewModel<TaskListViewModel>();
+			//var result = Authorization.GetUserInfo();
+			Link = Authorization.GetUserInfo();
+			//Close(this);
+			//ShowViewModel<TaskListViewModel>();
 		}
 
 		 
