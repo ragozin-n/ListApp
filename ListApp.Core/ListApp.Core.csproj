@@ -40,12 +40,9 @@
     <Compile Include="Services\IAuthorization.cs" />
     <Compile Include="ViewModels\TaskListViewModel.cs" />
     <Compile Include="ViewModels\CreateTaskViewModel.cs" />
-<<<<<<< HEAD
     <Compile Include="JsonObjects\TokenJson.cs" />
-=======
     <Compile Include="Task.cs" />
     <Compile Include="TaskСontainer.cs" />
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Threading.Tasks">
