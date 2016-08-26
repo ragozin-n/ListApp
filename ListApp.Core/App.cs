@@ -9,8 +9,7 @@ namespace ListApp.Core
 	{
 		public App()
 		{
-			Mvx.RegisterSingleton<IAuthorization>(new Authorization());
-			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
+			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<TaskListViewModel>());
 		}
 	}
 }
