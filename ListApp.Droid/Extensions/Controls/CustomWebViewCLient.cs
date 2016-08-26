@@ -10,7 +10,11 @@ namespace ListApp
 		{
 			base.OnPageFinished(view, url);
 			//TODO перенести в сервис
+<<<<<<< HEAD
 			Core.Authorization.SetToken(view.Title);
+=======
+			//Core.Authorization.SetToken(view.Title);
+>>>>>>> origin/settings
 		}
 	}
 }

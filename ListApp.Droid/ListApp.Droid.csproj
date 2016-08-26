@@ -16,6 +16,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +28,9 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -34,7 +38,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,14 +69,18 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.4.2.3\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="blocke.circleimageview">
+      <HintPath>..\packages\blocke.circleimageview.1.0\lib\MonoAndroid50\blocke.circleimageview.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Setup.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ListApp_DroidView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
+    <Compile Include="Views\SettingsView.cs" />
+    <Compile Include="Views\ListApp_DroidView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -93,24 +100,23 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\Sort.axml" />
     <AndroidResource Include="Resources\layout\sort_list_item.axml" />
+    <AndroidResource Include="Resources\layout\SettingsLayout.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\drawable\attention.png" />
+    <AndroidResource Include="Resources\drawable\avatar.png" />
     <AndroidResource Include="Resources\drawable\check.png" />
+    <AndroidResource Include="Resources\drawable\check2.png" />
     <AndroidResource Include="Resources\drawable\close.png" />
     <AndroidResource Include="Resources\drawable\close_dark.png" />
+    <AndroidResource Include="Resources\drawable\divider.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\drawable\logout.png" />
     <AndroidResource Include="Resources\drawable\logout_button.png" />
     <AndroidResource Include="Resources\drawable\menu.png" />
     <AndroidResource Include="Resources\drawable\password.png" />
-    <AndroidResource Include="Resources\drawable\status.png" />
-    <AndroidResource Include="Resources\drawable\status_done.png" />
     <AndroidResource Include="Resources\drawable\status_done_button.png" />
-    <AndroidResource Include="Resources\drawable\status_important.png" />
     <AndroidResource Include="Resources\drawable\time.png" />
     <AndroidResource Include="Resources\drawable\username.png" />
-    <AndroidResource Include="Resources\drawable\violet_button.png" />
-    <AndroidResource Include="Resources\drawable\important.png" />
-    <AndroidResource Include="Resources\drawable\avatar.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
