@@ -11,6 +11,8 @@ namespace ListApp.Core.ViewModels
 		private string _recallForTime;
 		private string _taskDate;
 		private string _description;
+		private IMvxCommand _cancel;
+		private IMvxCommand _aplyied;
 
 		public CreateTaskViewModel()
 		{
@@ -64,22 +66,32 @@ namespace ListApp.Core.ViewModels
 
 		public IMvxCommand CancelEvent
 		{
-			get { return new MvxCommand(Cancel); }
+			get
+			{
+				_cancel = _cancel ?? new MvxCommand(Cancel);
+				return _cancel; 
+			}
 		}
 
 		public IMvxCommand AplyiedEvent
 		{
-			get { return new MvxCommand(Aplyied); }
+			get
+			{
+				_aplyied = _aplyied ?? new MvxCommand(Aplyied);
+				return _aplyied;
+			}
 		}
 
 		public void Cancel()
 		{
-			
+			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
+			Close(this);
 		}
 
 		public void Aplyied()
 		{
-			
+			TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
+			Close(this);
 		}
 	}
 }

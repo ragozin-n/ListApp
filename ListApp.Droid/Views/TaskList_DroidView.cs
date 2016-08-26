@@ -22,14 +22,8 @@ namespace ListApp.Views
 
         public new TaskListViewModel ViewModel
         {
-            get
-            {
-                return (TaskListViewModel)base.ViewModel;
-            }
-            set
-            {
-                base.ViewModel = value;
-            }
+            get {return (TaskListViewModel)base.ViewModel; }
+            set {base.ViewModel = value;}
         }
 
         protected override void OnViewModelSet()
