@@ -10,7 +10,7 @@
         <Button
             style="@style/ToolbarButtonLeft"
             android:id="@+id/MenuButton"
-            android:background="@drawable/logout"
+            android:background="@drawable/menu"
             local:MvxBind="Click ReturnCommand" />
         <TextView
             android:text="Настройки"
