@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 ﻿using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 
@@ -100,6 +103,7 @@ namespace ListApp.Core
         #endregion
 
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/master
@@ -207,4 +211,6 @@ namespace ListApp.Core
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 }
