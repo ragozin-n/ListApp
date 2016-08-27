@@ -74,27 +74,10 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
     <Compile Include="Views\SettingsView.cs" />
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
-    <Compile Include="Extensions\Controls\BindableWebView.cs" />
-    <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
-    <Compile Include="Views\SettingsView.cs" />
-    <Compile Include="Views\ListApp_DroidView.cs" />
-    <Compile Include="Views\TaskList_DroidView.cs" />
->>>>>>> origin/master
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
     <Compile Include="Views\CreateTaskView.cs" />
     <Compile Include="Views\ItemTaskView.cs" />
     <Compile Include="Views\TaskListView.cs" />
@@ -106,8 +89,6 @@
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\Settings.axml" />
     <AndroidResource Include="Resources\values\style.xml" />
-<<<<<<< HEAD
-=======
     <AndroidResource Include="Resources\layout\TemplateItemTaskView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -125,38 +106,14 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
-    <AndroidResource Include="Resources\layout\Sort.axml" />
-    <AndroidResource Include="Resources\layout\sort_list_item.axml" />
     <AndroidResource Include="Resources\layout\SettingsLayout.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
     <AndroidResource Include="Resources\drawable\attention.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
     <AndroidResource Include="Resources\drawable\check.png" />
     <AndroidResource Include="Resources\drawable\check2.png" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <AndroidResource Include="Resources\drawable\close_dark.png" />
     <AndroidResource Include="Resources\drawable\close.png" />
-=======
-    <AndroidResource Include="Resources\drawable\close.png" />
-    <AndroidResource Include="Resources\drawable\close_dark.png" />
->>>>>>> origin/master
-=======
-    <AndroidResource Include="Resources\drawable\close.png" />
-    <AndroidResource Include="Resources\drawable\close_dark.png" />
->>>>>>> origin/master
-=======
-    <AndroidResource Include="Resources\drawable\close_dark.png" />
-    <AndroidResource Include="Resources\drawable\close.png" />
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
     <AndroidResource Include="Resources\drawable\divider.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\drawable\logout_button.png" />
@@ -166,11 +123,6 @@
     <AndroidResource Include="Resources\drawable\status_done_button.png" />
     <AndroidResource Include="Resources\drawable\time.png" />
     <AndroidResource Include="Resources\drawable\username.png" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
     <AndroidResource Include="Resources\drawable\status_done.png" />
     <AndroidResource Include="Resources\drawable\status_important.png" />
     <AndroidResource Include="Resources\drawable\status.png" />
@@ -186,13 +138,6 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

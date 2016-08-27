@@ -73,8 +73,11 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f010007
 			public const int MvxItemTemplate = 2130771975;
+<<<<<<< HEAD
 			
 =======
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f010008
 			public const int MvxDropDownItemTemplate = 2130771976;
@@ -108,6 +111,7 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f010003
 			public const int civ_fill_color = 2130771971;
+<<<<<<< HEAD
 >>>>>>> origin/master
 			
 			// aapt resource value: 0x7f010000
@@ -115,6 +119,8 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f010003
 			public const int civ_fill_color = 2130771971;
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			static Attribute()
 			{
@@ -141,6 +147,7 @@ namespace ListApp
 			// aapt resource value: 0x7f020003
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			public const int check2 = 2130837507;
 <<<<<<< HEAD
 =======
@@ -150,6 +157,9 @@ namespace ListApp
 			public const int check2 = 2130837507;
 =======
 >>>>>>> origin/master
+=======
+			public const int check2 = 2130837507;
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f020004
 			public const int close = 2130837508;
@@ -193,6 +203,7 @@ namespace ListApp
 			// aapt resource value: 0x7f020011
 			public const int username = 2130837521;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			public const int violet_button = 2130837521;
 >>>>>>> master
@@ -200,6 +211,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
@@ -223,12 +236,15 @@ namespace ListApp
 			public const int Avatar = 2131034140;
 			
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// aapt resource value: 0x7f05001b
 			public const int Avatar = 2131034139;
 			
 			// aapt resource value: 0x7f05001b
 			public const int Avatar = 2131034139;
 			
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			// aapt resource value: 0x7f050003
@@ -246,6 +262,7 @@ namespace ListApp
 			// aapt resource value: 0x7f05001e
 			public const int Email = 2131034142;
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 			// aapt resource value: 0x7f05001d
 			public const int Email = 2131034141;
@@ -277,6 +294,11 @@ namespace ListApp
 			public const int HeadLayout = 2131034114;
 			
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+			// aapt resource value: 0x7f050002
+			public const int HeadLayout = 2131034114;
+			
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			// aapt resource value: 0x7f050011
 			public const int IsAllDay = 2131034129;
 			
@@ -292,6 +314,7 @@ namespace ListApp
 			// aapt resource value: 0x7f05001a
 			public const int MenuButton = 2131034138;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			// aapt resource value: 0x7f050014
 			public const int ListView = 2131034132;
@@ -302,6 +325,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f050000
 			public const int MvvmCrossTagId = 2131034112;
@@ -309,6 +334,7 @@ namespace ListApp
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -338,12 +364,17 @@ namespace ListApp
 			// aapt resource value: 0x7f05001d
 			public const int Name = 2131034141;
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+			// aapt resource value: 0x7f05001d
+			public const int Name = 2131034141;
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f05000d
 			public const int RecallFor = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
 			public const int RecallForButton = 2131034126;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -369,6 +400,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f050009
 			public const int SelectDate = 2131034121;
@@ -384,6 +417,7 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f050022
 			public const int TaskList = 2131034146;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 			// aapt resource value: 0x7f05001e
@@ -428,6 +462,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0x7f050004
 			public const int Title = 2131034116;
@@ -466,6 +502,7 @@ namespace ListApp
 <<<<<<< HEAD
 			public const int webView = 2131034136;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 			// aapt resource value: 0x7f050018
@@ -483,6 +520,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
@@ -512,6 +551,7 @@ namespace ListApp
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			public const int Settings = 2130968579;
 =======
 			public const int SettingsLayout = 2130968579;
@@ -531,6 +571,9 @@ namespace ListApp
 			// aapt resource value: 0x7f040005
 			public const int sort_list_item = 2130968581;
 >>>>>>> origin/master
+=======
+			public const int Settings = 2130968579;
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 			public const int Settings = 2130968579;
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
@@ -643,6 +686,7 @@ namespace ListApp
 					2130771970,
 					2130771971};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 			public static int[] CircleImageView = new int[]
@@ -679,6 +723,8 @@ namespace ListApp
 					2130771971};
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 1
 			public const int CircleImageView_civ_border_color = 1;
@@ -694,9 +740,12 @@ namespace ListApp
 			
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			public static int[] MvxBinding = new int[]
@@ -714,6 +763,7 @@ namespace ListApp
 			{
 					2130771974};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -732,6 +782,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
@@ -740,6 +792,7 @@ namespace ListApp
 			{
 					2130771977};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -756,6 +809,8 @@ namespace ListApp
 					2130771973};
 >>>>>>> master
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
@@ -766,6 +821,7 @@ namespace ListApp
 			{
 					2130771978};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -784,10 +840,13 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -798,10 +857,13 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			public static int[] MvxListView = new int[]
 			{
 					2130771975,
 					2130771976};
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -817,6 +879,8 @@ namespace ListApp
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 =======
 >>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			

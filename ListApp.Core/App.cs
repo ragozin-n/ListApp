@@ -9,19 +9,9 @@ namespace ListApp.Core
 	{
 		public App()
 		{
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<SettingsViewModel>());
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 5e001cf... Merge remote-tracking branch 'origin/master'
 			Mvx.RegisterSingleton<IAuthorization>(new Authorization());
 			Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<LoginViewModel>());
->>>>>>> master
 		}
 	}
 }
