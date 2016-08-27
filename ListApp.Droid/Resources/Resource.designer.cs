@@ -72,12 +72,36 @@ namespace ListApp
 			
 			// aapt resource value: 0x7f010007
 			public const int MvxItemTemplate = 2130771975;
+<<<<<<< HEAD
 			
 			// aapt resource value: 0x7f010005
 			public const int MvxLang = 2130771973;
 			
 			// aapt resource value: 0x7f01000a
 			public const int MvxSource = 2130771978;
+=======
+			
+			// aapt resource value: 0x7f010005
+			public const int MvxLang = 2130771973;
+			
+			// aapt resource value: 0x7f01000a
+			public const int MvxSource = 2130771978;
+			
+			// aapt resource value: 0x7f010006
+			public const int MvxTemplate = 2130771974;
+			
+			// aapt resource value: 0x7f010001
+			public const int civ_border_color = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int civ_border_overlay = 2130771970;
+			
+			// aapt resource value: 0x7f010000
+			public const int civ_border_width = 2130771968;
+			
+			// aapt resource value: 0x7f010003
+			public const int civ_fill_color = 2130771971;
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f010006
 			public const int MvxTemplate = 2130771974;
@@ -117,7 +141,47 @@ namespace ListApp
 			public const int check = 2130837506;
 			
 			// aapt resource value: 0x7f020003
+<<<<<<< HEAD
 			public const int check2 = 2130837507;
+=======
+<<<<<<< HEAD
+			public const int check2 = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int close = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int close_dark = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int divider = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int logo = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int logout = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int logout_button = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int menu = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int password = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int status_done_button = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int time = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int username = 2130837518;
+=======
+			public const int close = 2130837507;
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f020004
 			public const int close = 2130837508;
@@ -159,7 +223,12 @@ namespace ListApp
 			public const int time = 2130837520;
 			
 			// aapt resource value: 0x7f020011
+<<<<<<< HEAD
 			public const int username = 2130837521;
+=======
+			public const int violet_button = 2130837521;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			static Drawable()
 			{
@@ -180,6 +249,9 @@ namespace ListApp
 			// aapt resource value: 0x7f05001c
 			public const int Avatar = 2131034140;
 			
+			// aapt resource value: 0x7f05001b
+			public const int Avatar = 2131034139;
+			
 			// aapt resource value: 0x7f050003
 			public const int CancelButton = 2131034115;
 			
@@ -195,9 +267,25 @@ namespace ListApp
 			// aapt resource value: 0x7f05001e
 			public const int Email = 2131034142;
 			
+			// aapt resource value: 0x7f05001d
+			public const int Email = 2131034141;
+			
 			// aapt resource value: 0x7f050002
 			public const int HeadLayout = 2131034114;
 			
+<<<<<<< HEAD
+=======
+			// aapt resource value: 0x7f050010
+			public const int IsAllDay = 2131034128;
+			
+<<<<<<< HEAD
+			// aapt resource value: 0x7f050021
+			public const int ListView = 2131034145;
+			
+			// aapt resource value: 0x7f050019
+			public const int MenuButton = 2131034137;
+=======
+>>>>>>> origin/master
 			// aapt resource value: 0x7f050011
 			public const int IsAllDay = 2131034129;
 			
@@ -207,11 +295,17 @@ namespace ListApp
 			// aapt resource value: 0x7f05000f
 			public const int IsPriorityTask = 2131034127;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f050010
 			public const int IsPropertyTaskSwith = 2131034128;
 			
 			// aapt resource value: 0x7f05001a
 			public const int MenuButton = 2131034138;
+=======
+			// aapt resource value: 0x7f050014
+			public const int ListView = 2131034132;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f050000
 			public const int MvvmCrossTagId = 2131034112;
@@ -219,14 +313,43 @@ namespace ListApp
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f05001d
 			public const int Name = 2131034141;
+=======
+<<<<<<< HEAD
+			// aapt resource value: 0x7f05001c
+			public const int Name = 2131034140;
+			
+			// aapt resource value: 0x7f050013
+			public const int RecallForRow = 2131034131;
+			
+			// aapt resource value: 0x7f050007
+			public const int SelectDateRow = 2131034119;
+=======
+			// aapt resource value: 0x7f05000c
+			public const int RecallFor = 2131034124;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f05000d
 			public const int RecallFor = 2131034125;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f05000e
 			public const int RecallForButton = 2131034126;
+=======
+<<<<<<< HEAD
+			// aapt resource value: 0x7f05001a
+			public const int UserInfo = 2131034138;
+			
+			// aapt resource value: 0x7f050012
+			public const int checkBox1 = 2131034130;
+=======
+			// aapt resource value: 0x7f050008
+			public const int SelectDate = 2131034120;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f050009
 			public const int SelectDate = 2131034121;
@@ -240,8 +363,35 @@ namespace ListApp
 			// aapt resource value: 0x7f05000c
 			public const int SelectTimeButton = 2131034124;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f050022
 			public const int TaskList = 2131034146;
+=======
+			// aapt resource value: 0x7f05001e
+			public const int enablePushSwitch = 2131034142;
+			
+			// aapt resource value: 0x7f05001f
+			public const int enableSyncSwitch = 2131034143;
+			
+			// aapt resource value: 0x7f050022
+			public const int img = 2131034146;
+			
+			// aapt resource value: 0x7f050020
+			public const int logoutButton = 2131034144;
+			
+			// aapt resource value: 0x7f050017
+<<<<<<< HEAD
+			public const int myButton = 2131034135;
+			
+			// aapt resource value: 0x7f050023
+			public const int name = 2131034147;
+			
+			// aapt resource value: 0x7f050004
+			public const int textView1 = 2131034116;
+=======
+			public const int conditionTask = 2131034135;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f050004
 			public const int Title = 2131034116;
@@ -276,8 +426,21 @@ namespace ListApp
 			// aapt resource value: 0x7f050019
 			public const int toolbar = 2131034137;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f050018
 			public const int webView = 2131034136;
+=======
+<<<<<<< HEAD
+			// aapt resource value: 0x7f050018
+			public const int toolbar = 2131034136;
+			
+			// aapt resource value: 0x7f050016
+			public const int webView = 2131034134;
+=======
+			// aapt resource value: 0x7f050012
+			public const int webView = 2131034130;
+>>>>>>> master
+>>>>>>> origin/master
 			
 			static Id()
 			{
@@ -302,7 +465,17 @@ namespace ListApp
 			public const int Login = 2130968578;
 			
 			// aapt resource value: 0x7f040003
+<<<<<<< HEAD
 			public const int Settings = 2130968579;
+=======
+			public const int SettingsLayout = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int Sort = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int sort_list_item = 2130968581;
+>>>>>>> origin/master
 			
 			// aapt resource value: 0x7f040004
 			public const int TaskList = 2130968580;
@@ -404,8 +577,41 @@ namespace ListApp
 		public partial class Styleable
 		{
 			
+<<<<<<< HEAD
 			public static int[] CircleImageView = new int[]
 			{
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971};
+=======
+<<<<<<< HEAD
+			public static int[] CircleImageView = new int[]
+			{
+=======
+			public static int[] CircleImageView = new int[] {
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978};
+>>>>>>> origin/master
+			
+			// aapt resource value: 1
+			public const int CircleImageView_civ_border_color = 1;
+			
+			// aapt resource value: 2
+			public const int CircleImageView_civ_border_overlay = 2;
+			
+			// aapt resource value: 0
+			public const int CircleImageView_civ_border_width = 0;
+			
+			// aapt resource value: 3
+			public const int CircleImageView_civ_fill_color = 3;
+			
+<<<<<<< HEAD
+=======
+			public static int[] MvxBinding = new int[] {
+>>>>>>> master
 					2130771968,
 					2130771969,
 					2130771970,
@@ -423,6 +629,7 @@ namespace ListApp
 			// aapt resource value: 3
 			public const int CircleImageView_civ_fill_color = 3;
 			
+>>>>>>> origin/master
 			public static int[] MvxBinding = new int[]
 			{
 					2130771972,
@@ -434,31 +641,76 @@ namespace ListApp
 			// aapt resource value: 1
 			public const int MvxBinding_MvxLang = 1;
 			
+<<<<<<< HEAD
 			public static int[] MvxControl = new int[]
 			{
 					2130771974};
+=======
+<<<<<<< HEAD
+			public static int[] MvxControl = new int[]
+			{
+					2130771974};
+=======
+			public static int[] MvxControl = new int[] {
+					2130771970};
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
+<<<<<<< HEAD
 			public static int[] MvxExpandableListView = new int[]
 			{
 					2130771977};
+=======
+<<<<<<< HEAD
+			public static int[] MvxExpandableListView = new int[]
+			{
+					2130771977};
+=======
+			public static int[] MvxExpandableListView = new int[] {
+					2130771973};
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
+<<<<<<< HEAD
 			public static int[] MvxImageView = new int[]
 			{
 					2130771978};
+=======
+<<<<<<< HEAD
+			public static int[] MvxImageView = new int[]
+			{
+					2130771978};
+=======
+			public static int[] MvxImageView = new int[] {
+					2130771974};
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 			public static int[] MvxListView = new int[]
 			{
 					2130771975,
 					2130771976};
+<<<<<<< HEAD
+=======
+=======
+			public static int[] MvxListView = new int[] {
+					2130771971,
+					2130771972};
+>>>>>>> master
+>>>>>>> origin/master
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
