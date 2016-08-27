@@ -78,11 +78,14 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Views\LoginView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
     <Compile Include="Views\SettingsView.cs" />
 =======
+=======
+>>>>>>> origin/master
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
     <Compile Include="Views\SettingsView.cs" />
@@ -124,14 +127,22 @@
     <AndroidResource Include="Resources\layout\sort_list_item.axml" />
     <AndroidResource Include="Resources\layout\SettingsLayout.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     <AndroidResource Include="Resources\drawable\attention.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
     <AndroidResource Include="Resources\drawable\check.png" />
     <AndroidResource Include="Resources\drawable\check2.png" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <AndroidResource Include="Resources\drawable\close_dark.png" />
     <AndroidResource Include="Resources\drawable\close.png" />
+=======
+    <AndroidResource Include="Resources\drawable\close.png" />
+    <AndroidResource Include="Resources\drawable\close_dark.png" />
+>>>>>>> origin/master
 =======
     <AndroidResource Include="Resources\drawable\close.png" />
     <AndroidResource Include="Resources\drawable\close_dark.png" />
@@ -145,6 +156,7 @@
     <AndroidResource Include="Resources\drawable\status_done_button.png" />
     <AndroidResource Include="Resources\drawable\time.png" />
     <AndroidResource Include="Resources\drawable\username.png" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <AndroidResource Include="Resources\drawable\status_done.png" />
     <AndroidResource Include="Resources\drawable\status_important.png" />
@@ -161,6 +173,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
   </ItemGroup>

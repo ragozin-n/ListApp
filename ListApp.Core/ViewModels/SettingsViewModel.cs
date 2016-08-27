@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 
@@ -100,6 +101,8 @@ namespace ListApp.Core
 
     }
 =======
+=======
+>>>>>>> origin/master
 ﻿using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 
@@ -200,5 +203,8 @@ namespace ListApp.Core
         #endregion
 
     }
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }
