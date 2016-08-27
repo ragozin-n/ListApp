@@ -13,25 +13,17 @@ namespace ListApp.Core.ViewModels
 		private string _description;
 		private IMvxCommand _cancel;
 		private IMvxCommand _aplyied;
-		private int _index = -1;
-		private Task _taskObject;
+		//private int _index = -1;
+		//private Task _taskObject;
 
-		public int Index
-		{
-			get { return _index; }
-			set { _index = value; }
-		}
-
-		public Task TaskObject
-		{
-			get{return _taskObject;}
-			set{_taskObject = value;}
-		}
+		public int? Index { get; set; } = null;
+		public Task TaskObject { get; set; }
 
 		//передается инт потому что 
-		public void Init(int task)
+		//28.08.16: null лучше подходит для "избранного" значения
+		public void Init(int? task)
 		{
-			if (task == -1)
+			if (task == null)
 			{
 				var timeNow = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, 0).ToString("g");
 				TaskTime = timeNow.Remove(timeNow.Length - 3, 3);
@@ -42,9 +34,9 @@ namespace ListApp.Core.ViewModels
 			}
 			else
 			{
-				TaskObject = TaskСontainer.AllTask[task];
+				TaskObject = TaskСontainer.AllTask[(int)task];
 				IsAllDay = TaskObject.IsAllDay;
-				IsPriority = TaskObject.ISPriority;
+				IsPriority = TaskObject.IsPriority;
 				TaskTime = TaskObject.TaskTime;
 				TaskDate = TaskObject.TaskDate;
 				RecallForTime = TaskObject.RecallForTime;
@@ -52,7 +44,7 @@ namespace ListApp.Core.ViewModels
 			}
 		}
 
-		public CreateTaskViewModel() { }
+		//public CreateTaskViewModel() { }
 
 		public string Description
 		{
@@ -122,7 +114,7 @@ namespace ListApp.Core.ViewModels
 			}
 			else
 			{
-				TaskObject.ISPriority = IsPriority;
+				TaskObject.IsPriority = IsPriority;
 				TaskObject.IsAllDay = IsAllDay;
 				TaskObject.Description = Description;
 				TaskObject.TaskTime = TaskTime;

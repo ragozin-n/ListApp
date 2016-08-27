@@ -1,7 +1,5 @@
 ﻿using System;
 using MvvmCross.Core.ViewModels;
-using System.Diagnostics;
-using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 
 namespace ListApp.Core
@@ -31,7 +29,7 @@ namespace ListApp.Core
 		{
 			Authorization.TokenAlive -= OnTokenAlive;
 			//Дополнительная логика после авторизации
-			var userInfo = await Authorization.GetUserInfo();
+			//var userInfo = await Authorization.GetUserInfo();
 			Close(this);
 			ShowViewModel<TaskListViewModel>();
 		}

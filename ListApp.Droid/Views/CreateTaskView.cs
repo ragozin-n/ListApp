@@ -2,7 +2,6 @@
 using Android.App;
 using MvvmCross.Droid.Views;
 using ListApp.Core.ViewModels;
-using System.Linq;
 
 namespace ListApp
 {
@@ -17,9 +16,9 @@ namespace ListApp
 		protected override void OnViewModelSet()
 		{
 			SetContentView(Resource.Layout.CreateTask);
-			this.FindViewById(Resource.Id.SelectTimeButton).Click += SetTime;
-			this.FindViewById(Resource.Id.RecallForButton).Click += SetRecallFor;
-			this.FindViewById(Resource.Id.SelectDateButton).Click += SetDate;
+			FindViewById(Resource.Id.SelectTimeButton).Click += SetTime;
+			FindViewById(Resource.Id.RecallForButton).Click += SetRecallFor;
+			FindViewById(Resource.Id.SelectDateButton).Click += SetDate;
 		}
 
 		//Create DataPicker
@@ -61,7 +60,7 @@ namespace ListApp
 		private void SetTimeRecallForEvents(object sender, TimePickerDialog.TimeSetEventArgs e)
 		{
 			var time = new TimeSpan(e.HourOfDay, e.Minute, 0).ToString("g");
-			this.ViewModel.RecallForTime = time.Remove(time.Length - 3, 3);
+			ViewModel.RecallForTime = time.Remove(time.Length - 3, 3);
 		}
 	}
 }

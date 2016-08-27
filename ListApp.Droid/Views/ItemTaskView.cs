@@ -1,7 +1,4 @@
-﻿using System;
-using Android.App;
-using MvvmCross.Droid.Views;
-using ListApp.Core;
+﻿using MvvmCross.Droid.Views;
 
 namespace ListApp
 {

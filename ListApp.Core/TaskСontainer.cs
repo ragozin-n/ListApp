@@ -10,10 +10,11 @@ namespace ListApp.Core
 		public TaskСontainer() { }
 		public static TaskListViewModel ListObject;
 
+		//28.08.16: Ваще непонятно зачем
+		//private static List<Task> _allTask = new List<Task>();
+		public static List<Task> AllTask { get; } = new List<Task>();
 
-		private static List<Task> _allTask = new List<Task>();
-		public static List<Task> AllTask { get { return _allTask; } }
-
+		//28.08.16: Тоже самое, что и выше. Дефолтное значение задается при инициализации. Менять не стал, так как логики много внутри, лень разбираться.
 		private static TypeSort _currentTypeSort = TypeSort.ByName;
 		public static TypeSort CurrentTypeSort { get { return _currentTypeSort;}}
 
@@ -28,7 +29,7 @@ namespace ListApp.Core
 
 		public static void AddTask(Task task)
 		{
-			_allTask.Add(task);
+			AllTask.Add(task);
 			_currentSort();
 		}
 		/// <summary>
@@ -36,8 +37,8 @@ namespace ListApp.Core
 		/// </summary>
 		public static Task Seek(int index)
 		{
-			Task buffer = _allTask[index];
-			_allTask.RemoveAt(index);
+			Task buffer = AllTask[index];
+			AllTask.RemoveAt(index);
 			return buffer;
 		}
 
@@ -64,20 +65,22 @@ namespace ListApp.Core
 			}
 		}
 
+		//28.08.16: DRY - достаточно будет одного метода Sort, который принимает List<Task> и TypeSort и в свиче подставляет. Кстати, enum можно кастить к int.
 		private static void SortByDate()
 		{
-			_allTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime));
+			AllTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime));
 		}
 		private static void SortByName()
 		{
-			_allTask.OrderBy((arg) => arg.Description);
+			AllTask.OrderBy((arg) => arg.Description);
 		}
 		private static void SortByPriority()
 		{
-			_allTask.OrderBy((arg) => arg.ISPriority);
+			AllTask.OrderBy((arg) => arg.IsPriority);
 		}
 	}
 
+	//28.08.16: Перечисления выделяют в отдельные классы.
 	public enum TypeSort
 	{
 		ByName,
