@@ -15,11 +15,11 @@ namespace ListApp.Core
 		/// Parse token from page's tittle and save it.
 		/// </summary>
 		/// <returns>Token's availability.</returns>
-		Task SetToken(string html);
+		System.Threading.Tasks.Task SetToken(string html);
 
 		event EventHandler TokenAlive;
 
-		string GetUserInfo();
+		Task<string> GetUserInfo();
 	}
 }
 

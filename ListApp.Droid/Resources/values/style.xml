@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="Theme.Custom" parent="@android:Theme.Material.Light.NoActionBar">
+		<item name="android:colorAccent">#ff9e9e9e</item>
+		<item name="android:colorControlActivated">#ffba77ff</item>
+		<item name="android:colorPrimaryDark">#ffba77ff</item>
+	</style>
+
+	<style name="BackgroundLayout" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:background">#ffffffff</item>
+	</style>
+
+	<style name="ToolbarLayout" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">?android:attr/actionBarSize</item>	
+	</style>
+
+	<style name="ToolbarStyle" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">#ffba77ff</item>
+	</style>
+
+	<style name="ToolbarButtonLeft" parent="@style/Theme.Custom">
+		<item name="android:layout_width">20dp</item>
+		<item name="android:layout_height">20dp</item>
+	        <item name="android:layout_gravity">center_vertical</item>
+	        <item name="android:layout_marginLeft">20dp</item>
+	</style>
+
+	<style name="ToolbarText" parent="@style/Theme.Custom">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">#ffffffff</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="HeaderLayout" parent="@style/Theme.Custom">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:background">#ffba77ff</item>
+		<item name="android:layout_marginBottom">15dp</item>
+	</style>
+
+	<style name="CenterText" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">#ffffffff</item>
+	</style>
+	
+	<style name="Switch" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:textColor">#ff1d1d26</item>
+		<item name="android:textSize">15dp</item>
+	</style>
+
+	<style name="Divider" parent="@style/Theme.Custom">
+		<item name="android:src">@drawable/divider</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:layout_marginBottom">10dp</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_centerHorizontal">true</item>	
+	</style>
+
+	<style name="FooterLayout" parent="@style/Theme.Custom">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:gravity">center|bottom</item>
+		<item name="android:layout_marginBottom">15dp</item>
+	</style>
+
+	<style name="BottomActionButton" parent="@style/Theme.Custom">
+		<item name="android:layout_width">60dp</item>
+		<item name="android:layout_height">60dp</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+	
+	
+</resources>

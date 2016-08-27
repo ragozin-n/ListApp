@@ -74,25 +74,42 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ListApp_DroidView.cs" />
+    <Compile Include="Views\LoginView.cs" />
     <Compile Include="Extensions\Controls\BindableWebView.cs" />
     <Compile Include="Extensions\Controls\CustomWebViewCLient.cs" />
-    <Compile Include="Views\TaskList_DroidView.cs" />
+    <Compile Include="Views\SettingsView.cs" />
     <Compile Include="Views\CreateTaskView.cs" />
+    <Compile Include="Views\ItemTaskView.cs" />
+    <Compile Include="Views\TaskListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
-    <AndroidResource Include="Resources\layout\TemplateItemTaskView.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\TaskList.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Settings.axml" />
+    <AndroidResource Include="Resources\values\style.xml" />
+    <AndroidResource Include="Resources\drawable\attention.png" />
+    <AndroidResource Include="Resources\drawable\avatar.png" />
+    <AndroidResource Include="Resources\drawable\check.png" />
+    <AndroidResource Include="Resources\drawable\check2.png" />
+    <AndroidResource Include="Resources\drawable\close_dark.png" />
+    <AndroidResource Include="Resources\drawable\close.png" />
+    <AndroidResource Include="Resources\drawable\divider.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\logout_button.png" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\menu.png" />
+    <AndroidResource Include="Resources\drawable\password.png" />
+    <AndroidResource Include="Resources\drawable\status_done_button.png" />
+    <AndroidResource Include="Resources\drawable\time.png" />
+    <AndroidResource Include="Resources\drawable\username.png" />
+    <AndroidResource Include="Resources\drawable\status_done.png" />
+    <AndroidResource Include="Resources\drawable\status_important.png" />
+    <AndroidResource Include="Resources\drawable\status.png" />
     <AndroidResource Include="Resources\layout\CreateTask.axml" />
-    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\ItemTask.axml" />
+    <AndroidResource Include="Resources\layout\TaskList.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -102,26 +119,6 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Login.axml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
-    <AndroidResource Include="Resources\layout\Sort.axml" />
-    <AndroidResource Include="Resources\drawable\attention.png" />
-    <AndroidResource Include="Resources\drawable\check.png" />
-    <AndroidResource Include="Resources\drawable\close.png" />
-    <AndroidResource Include="Resources\drawable\close_dark.png" />
-    <AndroidResource Include="Resources\drawable\logo.png" />
-    <AndroidResource Include="Resources\drawable\logout.png" />
-    <AndroidResource Include="Resources\drawable\logout_button.png" />
-    <AndroidResource Include="Resources\drawable\menu.png" />
-    <AndroidResource Include="Resources\drawable\password.png" />
-    <AndroidResource Include="Resources\drawable\status.png" />
-    <AndroidResource Include="Resources\drawable\status_done.png" />
-    <AndroidResource Include="Resources\drawable\status_done_button.png" />
-    <AndroidResource Include="Resources\drawable\status_important.png" />
-    <AndroidResource Include="Resources\drawable\time.png" />
-    <AndroidResource Include="Resources\drawable\username.png" />
-    <AndroidResource Include="Resources\drawable\violet_button.png" />
-    <AndroidResource Include="Resources\drawable\important.png" />
-    <AndroidResource Include="Resources\drawable\avatar.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -129,6 +126,9 @@
       <Project>{46C6B07F-339A-4D41-96A5-8031E6D3DDA0}</Project>
       <Name>ListApp.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

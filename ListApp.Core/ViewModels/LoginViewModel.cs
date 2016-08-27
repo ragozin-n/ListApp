@@ -27,16 +27,16 @@ namespace ListApp.Core
 			base.Start();
 		}
 
-		private void OnTokenAlive(object sender, EventArgs e)
+		private async void OnTokenAlive(object sender, EventArgs e)
 		{
 			Authorization.TokenAlive -= OnTokenAlive;
-			//var result = Authorization.GetUserInfo();
-			Link = Authorization.GetUserInfo();
-			//Close(this);
-			//ShowViewModel<TaskListViewModel>();
+			//Дополнительная логика после авторизации
+			var userInfo = await Authorization.GetUserInfo();
+			Close(this);
+			ShowViewModel<TaskListViewModel>();
 		}
 
-		 
+
 		//public void OnClick()
 		//{
 		//	Debug.WriteLine($"{ UserLogin } - { Password }");

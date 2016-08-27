@@ -14,7 +14,7 @@ namespace ListApp.Core
 
 		public TokenJson Token { get; set; }
 
-		public async Task SetToken(string html)
+		public async System.Threading.Tasks.Task SetToken(string html)
 		{
 			if (html.StartsWith("Success code=", StringComparison.CurrentCulture))
 			{
@@ -37,7 +37,7 @@ namespace ListApp.Core
 
 		public event EventHandler TokenAlive;
 
-		private async Task ConvertCodeToToken()
+		private async System.Threading.Tasks.Task ConvertCodeToToken()
 		{
 			using (var client = new HttpClient())
 			{
@@ -65,8 +65,8 @@ namespace ListApp.Core
 			{
 				var responce = await client.GetAsync($"https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token={Token.AccessToken}");
 				var responceString = await responce.Content.ReadAsStreamAsync();
-
 			}
+			return null;
 			//var result = $"https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token={Token.AccessToken}";
 			//return result;
 		}
