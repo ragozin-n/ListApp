@@ -39,11 +39,11 @@
     <Compile Include="Services\IAuthorization.cs" />
     <Compile Include="JsonObjects\TokenJson.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
-    <Compile Include="Task.cs" />
-    <Compile Include="TaskСontainer.cs" />
     <Compile Include="ViewModels\CreateTaskViewModel.cs" />
     <Compile Include="ViewModels\ItemTaskViewModel.cs" />
     <Compile Include="ViewModels\TaskListViewModel.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskСontainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Threading.Tasks">
