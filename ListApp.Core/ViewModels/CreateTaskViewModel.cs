@@ -102,18 +102,25 @@ namespace ListApp.Core.ViewModels
 
 		public void Aplyied()
 		{
+			string taskTime = TaskTime;
+			string recallForTime = RecallForTime;
+			if (IsAllDay)
+			{
+				taskTime = "";
+				recallForTime = "";
+			}
 			if (TaskObject == null)
 			{
-				TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, TaskTime, TaskDate, RecallForTime));
+				TaskСontainer.AddTask(new Task(IsPriority, IsAllDay, Description, taskTime, TaskDate, recallForTime));
 			}
 			else
 			{
 				TaskObject.IsPriority = IsPriority;
 				TaskObject.IsAllDay = IsAllDay;
 				TaskObject.Description = Description;
-				TaskObject.TaskTime = TaskTime;
+				TaskObject.TaskTime = taskTime;
 				TaskObject.TaskDate = TaskDate;
-				TaskObject.RecallForTime = RecallForTime;
+				TaskObject.RecallForTime = recallForTime;
 			}
 			Close(this);
 			TaskСontainer.ResetVisible();

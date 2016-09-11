@@ -2,6 +2,7 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using Google.Apis.Auth.OAuth2.Flows;
+using ListApp.Core.ViewModels;
 
 namespace ListApp.Core
 {

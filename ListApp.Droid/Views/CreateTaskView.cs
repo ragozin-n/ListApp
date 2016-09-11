@@ -19,13 +19,48 @@ namespace ListApp
 			FindViewById(Resource.Id.SelectTimeButton).Click += SetTime;
 			FindViewById(Resource.Id.RecallForButton).Click += SetRecallFor;
 			FindViewById(Resource.Id.SelectDateButton).Click += SetDate;
+			if (ViewModel.TaskObject != null)
+				((Android.Widget.TextView)FindViewById(Resource.Id.TitleCreateTask)).Text = "Редактировать задачу";
+			FindViewById(Resource.Id.DescriptionTaskTextView).Click += ClickTitle;
+			FindViewById(Resource.Id.IsAllDayRowSwith).Click += ClickSwitchAllDay;
+			ClickSwitchAllDay(new object(), new EventArgs());
 		}
+
+		private void ClickSwitchAllDay(object sender, EventArgs e)
+		{
+			bool current = ((Android.Widget.Switch)FindViewById(Resource.Id.IsAllDayRowSwith)).Checked;
+			FindViewById(Resource.Id.SelectTimeButton).Clickable = !current;
+			FindViewById(Resource.Id.RecallForButton).Clickable = !current;
+			if (current)
+			{
+				FindViewById(Resource.Id.RecallFor).SetBackgroundColor(Android.Graphics.Color.Silver);
+				FindViewById(Resource.Id.SelectTime).SetBackgroundColor(Android.Graphics.Color.Silver);
+			}
+			else
+			{
+				FindViewById(Resource.Id.RecallFor).SetBackgroundColor(Android.Graphics.Color.White);
+				FindViewById(Resource.Id.SelectTime).SetBackgroundColor(Android.Graphics.Color.White);
+				if (string.IsNullOrEmpty(ViewModel.TaskTime))
+					ViewModel.TaskTime = DateTime.Now.ToString("t");
+			}
+		}
+
+
+		//Стираем название при первом клике на описание задачи
+		private void ClickTitle(object sender, EventArgs e)
+		{
+			if (!isExistFirstClickTitle)
+			{
+				((Android.Widget.TextView)FindViewById(Resource.Id.DescriptionTaskTextView)).Text = "";
+				isExistFirstClickTitle = true;
+			}
+		}
+		private bool isExistFirstClickTitle = false;
 
 		//Create DataPicker
 		private void SetDate(object sender, EventArgs e)
 		{
 			DateTime date = DateTime.Parse(ViewModel.TaskDate);
-			date.AddMonths(-1);
 			Dialog picker = new DatePickerDialog(this, SetDateEvent, date.Year, date.Month, date.Day);
 			picker.Show();
 		}
@@ -38,14 +73,25 @@ namespace ListApp
 		//Установить title
 		private void SetTime(object sender, EventArgs e)
 		{
-			string[] buffer = ViewModel.TaskTime.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries);
+			string[] buffer = new string[2];
+			if (string.IsNullOrEmpty(ViewModel.TaskTime))
+			{
+				buffer[0] = DateTime.Now.Hour.ToString();
+				buffer[1] = DateTime.Now.Minute.ToString();
+			}
+			else
+			{
+				buffer = ViewModel.TaskTime.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries);
+			}
 			TimePickerDialog picker = new TimePickerDialog(this, SetTimeEvents, int.Parse(buffer[0]), int.Parse(buffer[1]), true);
 			picker.Show();
 		}
 		private void SetTimeEvents(object sender, TimePickerDialog.TimeSetEventArgs e)
 		{
-			var time = new TimeSpan(e.HourOfDay, e.Minute, 0).ToString("g");
-			this.ViewModel.TaskTime = time.Remove(time.Length - 3, 3);
+			var time = new DateTime(1, 1, 1, e.HourOfDay, e.Minute, 1);
+			//var time = new TimeSpan(e.HourOfDay, e.Minute, 0).ToString("g");
+			//this.ViewModel.TaskTime = time.Remove(time.Length - 3, 3);
+			this.ViewModel.TaskTime = time.ToString("t");
 		}
 
 		private void SetRecallFor(object sender, EventArgs e)
@@ -53,7 +99,6 @@ namespace ListApp
 			//a hour
 			string[] buffer = ViewModel.RecallForTime.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries);
 			Dialog picker = new TimePickerDialog(this, SetTimeRecallForEvents, int.Parse(buffer[0]), int.Parse(buffer[1]), true);
-			//Title too
 			picker.Show();
 		}
 

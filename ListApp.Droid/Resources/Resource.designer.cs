@@ -244,7 +244,7 @@ namespace ListApp
 			public const int TaskList = 2131034147;
 			
 			// aapt resource value: 0x7f050004
-			public const int Title = 2131034116;
+			public const int TitleCreateTask = 2131034116;
 			
 			// aapt resource value: 0x7f05001c
 			public const int UserInfo = 2131034140;
