@@ -7,14 +7,10 @@ namespace ListApp.Core
 {
 	public class TaskСontainer
 	{
-		public TaskСontainer() { }
-		public static TaskListViewModel ListObject;
+		public static TaskListViewModel ListObject { get; set; }
 
-		//28.08.16: Ваще непонятно зачем
-		//private static List<Task> _allTask = new List<Task>();
-		public static List<Task> AllTask { get; } = new List<Task>();
+		private static List<Task> allTask = new List<Task>();
 
-		//28.08.16: Тоже самое, что и выше. Дефолтное значение задается при инициализации. Менять не стал, так как логики много внутри, лень разбираться.
 		private static TypeSort _currentTypeSort = TypeSort.ByName;
 		public static TypeSort CurrentTypeSort { get { return _currentTypeSort;}}
 
@@ -24,12 +20,13 @@ namespace ListApp.Core
 		public static void ResetVisible()
 		{
 			_currentSort();
-			ListObject.ListItems = new ObservableCollection<ItemTaskViewModel>(TaskСontainer.AllTask.Select(arg => new ItemTaskViewModel(arg.Description, arg.TaskDate, 0))); ;
+			int i = 0;
+			ListObject.ListItems = new ObservableCollection<ItemTaskViewModel>(TaskСontainer.allTask.Select(arg => new ItemTaskViewModel(arg.Description, arg.TaskDate,arg.TaskTime, i++))); ;
 		}
 
 		public static void AddTask(Task task)
 		{
-			AllTask.Add(task);
+			allTask.Add(task);
 			_currentSort();
 		}
 		/// <summary>
@@ -37,9 +34,19 @@ namespace ListApp.Core
 		/// </summary>
 		public static Task Seek(int index)
 		{
-			Task buffer = AllTask[index];
-			AllTask.RemoveAt(index);
+			Task buffer = allTask[index];
+			allTask.RemoveAt(index);
 			return buffer;
+		}
+
+		public static void Remove(int index)
+		{
+			allTask.RemoveAt(index);
+		}
+
+		public static Task Get(int index)
+		{
+			return allTask[index];
 		}
 
 		public static void SetSort(TypeSort sort)
@@ -65,22 +72,22 @@ namespace ListApp.Core
 			}
 		}
 
-		//28.08.16: DRY - достаточно будет одного метода Sort, который принимает List<Task> и TypeSort и в свиче подставляет. Кстати, enum можно кастить к int.
 		private static void SortByDate()
 		{
-			AllTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime));
+			allTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime));
 		}
 		private static void SortByName()
 		{
-			AllTask.OrderBy((arg) => arg.Description);
+			allTask.OrderBy((arg) => arg.Description);
 		}
 		private static void SortByPriority()
 		{
-			AllTask.OrderBy((arg) => arg.IsPriority);
+			allTask.OrderBy((arg) => arg.IsPriority);
 		}
 	}
 
 	//28.08.16: Перечисления выделяют в отдельные классы.
+	//11.09.16: Пусть пока здесь полежит
 	public enum TypeSort
 	{
 		ByName,

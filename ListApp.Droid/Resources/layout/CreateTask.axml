@@ -15,7 +15,7 @@
         android:paddingLeft="16dp">
         <ImageButton
             android:id="@+id/CancelButton"
-            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:src="@drawable/close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -34,7 +34,7 @@
             android:textSize="16dp" />
         <ImageButton
             android:id="@+id/AplyiedButton"
-            android:src="@android:drawable/ic_menu_gallery"
+            android:src="@drawable/check2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

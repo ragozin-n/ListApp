@@ -13,17 +13,12 @@ namespace ListApp.Core.ViewModels
 		private string _description;
 		private IMvxCommand _cancel;
 		private IMvxCommand _aplyied;
-		//private int _index = -1;
-		//private Task _taskObject;
 
-		public int? Index { get; set; } = null;
 		public Task TaskObject { get; set; }
 
-		//передается инт потому что 
-		//28.08.16: null лучше подходит для "избранного" значения
-		public void Init(int? task)
+		public void Init(int index)
 		{
-			if (task == null)
+			if (index == -1)
 			{
 				var timeNow = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, 0).ToString("g");
 				TaskTime = timeNow.Remove(timeNow.Length - 3, 3);
@@ -31,10 +26,11 @@ namespace ListApp.Core.ViewModels
 				RecallForTime = timeOneHour.Remove(timeOneHour.Length - 3, 3);
 				TaskDate = DateTime.Now.ToString("D");
 				Description = "Новая задача";
+				TaskObject = null;
 			}
 			else
 			{
-				TaskObject = TaskСontainer.AllTask[(int)task];
+				TaskObject = TaskСontainer.Get((int)index);
 				IsAllDay = TaskObject.IsAllDay;
 				IsPriority = TaskObject.IsPriority;
 				TaskTime = TaskObject.TaskTime;
@@ -43,8 +39,6 @@ namespace ListApp.Core.ViewModels
 				Description = TaskObject.Description;
 			}
 		}
-
-		//public CreateTaskViewModel() { }
 
 		public string Description
 		{

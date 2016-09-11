@@ -9,7 +9,8 @@ namespace ListApp.Core
     {
         private string _nameTask;
 		private string _dateTask;
-		//private int _indexItem;
+		private string _timeTask;
+		private int indexItem;
 
         public string NameTask
         {
@@ -21,14 +22,17 @@ namespace ListApp.Core
             get { return _dateTask; }
 			set { _dateTask = value; RaisePropertyChanged(() => DateTask);}
         }
-
-		public int IndexItem { get; set; }
-
-		public ItemTaskViewModel(string name, string date, int indexItem)
+		public string TimeTask
+		{
+			get { return _timeTask; }
+			set { _timeTask = value; RaisePropertyChanged(() => TimeTask); }
+		}
+		public ItemTaskViewModel(string name, string date, string time, int indexItem)
         {
             NameTask = name;
             DateTask = date;
-			IndexItem = indexItem;
+			TimeTask = time;
+			this.indexItem = indexItem;
         }
 
 		private ICommand _editTask;
@@ -43,8 +47,7 @@ namespace ListApp.Core
 		}
 		private void Edit()
 		{
-			//28.08.16: Можно просто передать IndexItem?
-			ShowViewModel<CreateTaskViewModel>(new { task = IndexItem });
+			ShowViewModel<CreateTaskViewModel>(new { index = indexItem });
 		}
     }
 }
