@@ -15,7 +15,7 @@ namespace ListApp.Core
 		public static TypeSort CurrentTypeSort { get { return _currentTypeSort;}}
 
 		private delegate void CurrentSort();
-		private static CurrentSort _currentSort = SortByDate;
+		private static CurrentSort _currentSort = SortByName;
 
 		public static void ResetVisible()
 		{
@@ -27,7 +27,7 @@ namespace ListApp.Core
 		public static void AddTask(Task task)
 		{
 			allTask.Add(task);
-			_currentSort();
+			ResetVisible();
 		}
 		/// <summary>
 		/// Возвращает элемент по иднексу и удаляет его
@@ -74,15 +74,15 @@ namespace ListApp.Core
 
 		private static void SortByDate()
 		{
-			allTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime));
+			allTask =  allTask.OrderBy((arg) => DateTime.Parse(arg.TaskDate)).ThenBy((arg) => DateTime.Parse(arg.TaskTime)).ToList();
 		}
 		private static void SortByName()
 		{
-			allTask.OrderBy((arg) => arg.Description);
+			allTask = allTask.OrderBy((arg) => arg.Description).ToList();
 		}
 		private static void SortByPriority()
 		{
-			allTask.OrderBy((arg) => arg.IsPriority);
+			allTask = allTask.OrderBy((arg) => arg.IsPriority).ToList();
 		}
 	}
 

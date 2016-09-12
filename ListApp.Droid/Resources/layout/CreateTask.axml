@@ -134,15 +134,15 @@
                 android:layout_centerInParent="true"
                 android:textColor="#ff1d1d26"
                 android:textSize="16dp" />
-            <Button
+            <Spinner
                 android:id="@+id/RecallForButton"
                 android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="#ff1d1d26"
-                local:MvxBind="Text RecallForTime"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                localMvxBind="ItemsSource ItemsPushTime;SelectedItem SelectedItemPushTime" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/IsPriorityTask"
