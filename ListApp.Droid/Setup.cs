@@ -16,7 +16,7 @@ namespace ListApp
 
 		protected override IMvxApplication CreateApp()
 		{
-            //
+			//
 			return new Core.App();
 		}
 

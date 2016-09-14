@@ -77,7 +77,7 @@ namespace ListApp.Core
 
         private void DoLogoutCommand()
         {
-            //
+			Close(this);
         }
 
         private MvxCommand _returnCommand; // возврат в меню

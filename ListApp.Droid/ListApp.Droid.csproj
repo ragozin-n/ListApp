@@ -69,6 +69,12 @@
     <Reference Include="blocke.circleimageview">
       <HintPath>..\packages\blocke.circleimageview.1.0\lib\MonoAndroid50\blocke.circleimageview.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v4.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Crosslight.Xamarin.Android.Support.v7.AppCompat.23.1.1\lib\MonoAndroid10\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Setup.cs" />
@@ -81,6 +87,7 @@
     <Compile Include="Views\CreateTaskView.cs" />
     <Compile Include="Views\ItemTaskView.cs" />
     <Compile Include="Views\TaskListView.cs" />
+    <Compile Include="Views\ItemLeftMenuView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -98,6 +105,7 @@
     <AndroidResource Include="Resources\layout\ItemTask.axml" />
     <AndroidResource Include="Resources\layout\TaskList.axml" />
     <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\ItemLeftMenu.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />

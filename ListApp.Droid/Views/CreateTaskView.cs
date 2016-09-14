@@ -48,7 +48,7 @@ namespace ListApp
 		{
 			bool current = FindViewById<Switch>(Resource.Id.IsAllDayRowSwith).Checked;
 			FindViewById(Resource.Id.SelectTimeButton).Clickable = !current;
-			FindViewById(Resource.Id.RecallForButton).Clickable = !current;
+			FindViewById(Resource.Id.RecallForButton).Clickable = false;
 			if (current)
 			{
 				FindViewById(Resource.Id.RecallFor).SetBackgroundColor(Android.Graphics.Color.Silver);

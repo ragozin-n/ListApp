@@ -73,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             android:layout_below="@+id/DescriptionTask"
+            android:background="#ffffffff"
             android:paddingRight="15dp"
             android:paddingLeft="15dp">
             <TextView
@@ -82,7 +83,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
                 android:textColor="#ff1d1d26"
-                android:background="#ffffffff"
                 android:textSize="16dp" />
             <Button
                 android:id="@+id/SelectDateButton"
